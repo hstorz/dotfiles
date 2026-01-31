@@ -1,9 +1,9 @@
-### .dotfiles
+# .dotfiles
 
-## Repo to sync .dotfiles with chezmoi to multiple device
+## Repo to sync .dotfiles with chezmoi to multiple devices
 
-# Sync device platforms:
+### Sync device platforms:
 
-    - MacOS
+    - macOS
     - Fedora Workstation
     - CachyOS KDE
