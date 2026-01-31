@@ -26,8 +26,15 @@ config = {
         }
     },
 
-    -- fix @ symbol on Mac keyboard layout --
     keys = {{
+        -- close current pane when opeed, else close tab --
+        key = "w",
+        mods = "CMD",
+        action = wezterm.action.CloseCurrentPane({
+            confirm = false
+        })
+    }, {
+        -- fix @ symbol on Mac keyboard layout -- 
         key = 'l',
         mods = 'ALT',
         action = wezterm.action.SendString '@'
