@@ -6,4 +6,4 @@
 
     - macOS
     - Fedora Workstation
-    - CachyOS KDE
+    - Arch Linux
