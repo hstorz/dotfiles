@@ -13,7 +13,7 @@ config = {
     font = wezterm.font('JetBrains Mono', {
         weight = 'Bold'
     }),
-    font_size = 15,
+    font_size = 14,
     line_height = 1.2,
 
     color_scheme = 'Darcula (base16)',
