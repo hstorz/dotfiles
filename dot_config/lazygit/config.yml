@@ -29,5 +29,5 @@ customCommands:
         title: 'What is the new branch name?'
         key: 'BranchName'
         initialValue: ''
-    command: "git flow {{.Form.BranchType}} start {{.Form.BranchName}}"
+    command: "git checkout -b {{.Form.BranchType}}/{{.Form.BranchName}}"
     loadingText: 'Creating branch'
