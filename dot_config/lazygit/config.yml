@@ -29,5 +29,5 @@ customCommands:
         title: 'What is the new branch name?'
         key: 'BranchName'
         initialValue: ''
-    command: "git checkout -b {{.Form.BranchType}}/{{.Form.BranchName}}"
+    command: "git checkout -b {{.Form.BranchType}}/$(echo '{{.Form.BranchName}}' | tr ' ' '-')"
     loadingText: 'Creating branch'
