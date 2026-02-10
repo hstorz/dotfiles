@@ -6,7 +6,7 @@ config = {
     automatically_reload_config = true,
     hide_tab_bar_if_only_one_tab = true,
     window_close_confirmation = 'NeverPrompt',
-    window_decorations = "RESIZE",
+    window_decorations = "TITLE | RESIZE",
     default_cursor_style = "BlinkingBar",
     enable_scroll_bar = true,
 
