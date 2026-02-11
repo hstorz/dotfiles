@@ -1,11 +1,9 @@
-# Minimal dark theme - inherits default theme with black background, white text, gray status bar
-inherits = "default"
+# Catppuccin frappe theme with black background
+inherits = "catppuccin_frappe"
 
 "ui.background" = "black"
 "ui.text" = "white"
-"ui.statusline" = { fg = "white", bg = "dark_gray" }
 
 [palette]
 black = "#000000"
 white = "#ffffff"
-dark_gray = "#2a2a2a"
