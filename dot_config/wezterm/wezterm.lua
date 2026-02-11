@@ -37,6 +37,11 @@ config = {
         action = wezterm.action.CloseCurrentPane({
             confirm = false
         })
+    }, {
+        -- direct "~" character input with option + N shortcut 
+        key = "n",
+        mods = "OPT",
+        action = wezterm.action.SendString("~")
     }}
 }
 
