@@ -31,3 +31,28 @@ customCommands:
         initialValue: ''
     command: "git checkout -b {{.Form.BranchType}}/$(echo '{{.Form.BranchName}}' | tr ' ' '-')"
     loadingText: 'Creating branch'
+
+gui:
+  # Use catppuccin frappe blue theme
+  theme:
+    activeBorderColor:
+      - '#8caaee'
+      - bold
+    inactiveBorderColor:
+      - '#a5adce'
+    optionsTextColor:
+      - '#8caaee'
+    selectedLineBgColor:
+      - '#414559'
+    cherryPickedCommitBgColor:
+      - '#51576d'
+    cherryPickedCommitFgColor:
+      - '#8caaee'
+    unstagedChangesColor:
+      - '#e78284'
+    defaultFgColor:
+      - '#c6d0f5'
+    searchingActiveBorderColor:
+      - '#e5c890'
+  authorColors:
+    '*': '#babbf1'
