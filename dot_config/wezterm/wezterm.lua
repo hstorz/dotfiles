@@ -10,6 +10,10 @@ config = {
     default_cursor_style = "BlinkingBar",
     enable_scroll_bar = true,
 
+    -- Swap Alt key behavior: left produces composed chars, right acts as plain Alt
+    send_composed_key_when_left_alt_is_pressed = true,
+    send_composed_key_when_right_alt_is_pressed = false,
+
     font = wezterm.font('JetBrains Mono', {
         weight = 'Bold'
     }),
@@ -33,11 +37,6 @@ config = {
         action = wezterm.action.CloseCurrentPane({
             confirm = false
         })
-    }, {
-        -- fix @ symbol on Mac keyboard layout -- 
-        key = 'l',
-        mods = 'ALT',
-        action = wezterm.action.SendString '@'
     }}
 }
 
