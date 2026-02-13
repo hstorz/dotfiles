@@ -1,0 +1,7 @@
+brew "chezmoi"
+brew "helix"
+brew "lazygit"
+brew "starship"
+brew "yazi"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
