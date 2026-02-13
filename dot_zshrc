@@ -1,2 +1,20 @@
+export XDG_CONFIG_HOME="~/.config"
+
+alias h="cd ~"
+alias g="cd ~/Git"
+alias j="cd ~/Git/journal"
+alias p="cd ~/Git/python"
+alias n="cd /Volumes/notes/zettelkasten"
+
+alias c="chezmoi"
+alias l="lazygit"
+alias o="opencode"
+alias y="yazi"
+
+eval "$(starship init zsh)"
+
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Load .zshrc.local if it exists
 test -r ~/.zshrc.local && source ~/.zshrc.local
