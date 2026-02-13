@@ -1,0 +1,2 @@
+# Load .zshrc.local if it exists
+test -r ~/.zshrc.local && source ~/.zshrc.local
