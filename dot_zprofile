@@ -1,0 +1,8 @@
+# Homebrew / Linuxbrew setup
+if [[ "$OSTYPE" == darwin* ]]; then
+    # macOS
+    export PATH="/opt/homebrew/bin:$PATH"
+elif [[ "$OSTYPE" == linux* ]]; then
+    # Linux
+    eval "$(~/.linuxbrew/bin/brew shellenv)"
+fi
