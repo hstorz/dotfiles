@@ -1,5 +1,5 @@
 brew "chezmoi"
-brew "helix"
+brew "micro"
 brew "lazygit"
 brew "starship"
 brew "yazi"
