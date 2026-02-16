@@ -10,11 +10,13 @@ alias c="chezmoi"
 alias l="lazygit"
 alias o="opencode"
 alias y="yazi"
+alias docker="podman"
 
 eval "$(starship init zsh)"
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Source brew zsh files 
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load .zshrc.local if it exists
 test -r ~/.zshrc.local && source ~/.zshrc.local
