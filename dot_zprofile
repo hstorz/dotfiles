@@ -4,5 +4,5 @@ if [[ "$OSTYPE" == darwin* ]]; then
     export PATH="/opt/homebrew/bin:$PATH"
 elif [[ "$OSTYPE" == linux* ]]; then
     # Linux
-    eval "$(~/.linuxbrew/bin/brew shellenv)"
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
