@@ -1,10 +1,10 @@
-export XDG_CONFIG_HOME="~/.config"
+export XDG_CONFIG_HOME="$HOME/.config"
 export HOMEBREW_NO_ENV_HINTS=1
 
-alias h="cd ~"
-alias g="cd ~/Git"
-alias j="cd ~/Git/journal"
-alias p="cd ~/Git/python"
+alias h="cd $HOME"
+alias g="cd $HOME/Git"
+alias j="cd $HOME/Git/journal"
+alias p="cd $HOME/Git/python"
 alias n="cd /Volumes/notes/zettelkasten"
 
 alias c="chezmoi"
