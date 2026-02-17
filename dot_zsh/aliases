@@ -1,6 +1,6 @@
 # cd path alias
 alias h="cd $HOME"
-alias c="cd $HOME/.config"
+alias d="cd $HOME/.config"
 alias g="cd $HOME/Git"
 alias j="cd $HOME/Git/journal"
 alias p="cd $HOME/Git/python"
