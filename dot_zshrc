@@ -19,8 +19,10 @@ eval "$(starship init zsh)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Load .zshrc.local if it exists
-test -r ~/.zshrc.local && source ~/.zshrc.local
+# Disable underline highlight
+(( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[path]=none
+ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
 # Open yazi and cd into rectent path
 function y() {
@@ -34,3 +36,6 @@ function y() {
         rm -f -- "$tmp"
     fi
 }
+
+# Load .zshrc.local if it exists
+test -r ~/.zshrc.local && source ~/.zshrc.local
