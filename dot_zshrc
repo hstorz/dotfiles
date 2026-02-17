@@ -1,18 +1,6 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export HOMEBREW_NO_ENV_HINTS=1
 
-alias h="cd $HOME"
-alias g="cd $HOME/Git"
-alias j="cd $HOME/Git/journal"
-alias p="cd $HOME/Git/python"
-alias n="cd /Volumes/notes/zettelkasten"
-
-alias c="chezmoi"
-alias l="lazygit"
-alias o="opencode"
-alias m="micro"
-alias docker="podman"
-
 eval "$(starship init zsh)"
 
 # Source brew zsh files 
@@ -33,5 +21,6 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-# Load .zshrc.local if it exists
-test -r ~/.zshrc.local && source ~/.zshrc.local
+# Load .zsh files (when available)
+test -r $HOME/.zshrc.local && source $HOME/.zshrc.local
+test -r $HOME/.zsh/aliases && source $HOME/.zsh/aliases
