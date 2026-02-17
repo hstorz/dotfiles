@@ -6,9 +6,10 @@ config = {
     automatically_reload_config = true,
     hide_tab_bar_if_only_one_tab = true,
     window_close_confirmation = 'NeverPrompt',
-    window_decorations = "TITLE | RESIZE",
+    window_decorations = "RESIZE | TITLE | INTEGRATED_BUTTONS",
     default_cursor_style = "BlinkingBar",
     enable_scroll_bar = true,
+    enable_wayland = true,
 
     -- Swap Alt key behavior: left produces composed chars, right acts as plain Alt
     send_composed_key_when_left_alt_is_pressed = true,
