@@ -32,27 +32,36 @@ customCommands:
     command: "git checkout -b {{.Form.BranchType}}/$(echo '{{.Form.BranchName}}' | tr ' ' '-')"
     loadingText: 'Creating branch'
 
+# Vesper theme
 gui:
-  # Use catppuccin frappe blue theme
   theme:
     activeBorderColor:
-      - '#8caaee'
-      - bold
+    - "#FFCFA8"
+    - bold
+    
     inactiveBorderColor:
-      - '#a5adce'
-    optionsTextColor:
-      - '#8caaee'
-    selectedLineBgColor:
-      - '#414559'
-    cherryPickedCommitBgColor:
-      - '#51576d'
-    cherryPickedCommitFgColor:
-      - '#8caaee'
-    unstagedChangesColor:
-      - '#e78284'
-    defaultFgColor:
-      - '#c6d0f5'
+    - "#444444"
+    
     searchingActiveBorderColor:
-      - '#e5c890'
+    - "#FFC799"
+    
+    defaultFgColor:
+    - "#FFFFFF"
+    
+    optionsTextColor:
+    - "#FFCFA8"
+    
+    selectedLineBgColor:
+    - "#444444"
+    
+    unstagedChangesColor:
+    - "#FFCFA8"
+    
+    cherryPickedCommitFgColor:
+    - "#FFCFA8"
+    
+    cherryPickedCommitBgColor:
+    - "#505050"
+    
   authorColors:
-    '*': '#babbf1'
+   '*': '#65737E' 
