@@ -2,5 +2,6 @@
   "keymap": "macos",
   "editor": {
     "cursor_style": "blinking_bar"
-  }
+  },
+  "theme": "darcula"
 }
