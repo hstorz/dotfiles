@@ -130,4 +130,8 @@ config = {
     } or {}
 }
 
+-- Load tiled workspace configurations
+local develop_workspace = require 'workspaces.develop'
+develop_workspace.setup(config)
+
 return config
