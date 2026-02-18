@@ -7,15 +7,22 @@
   "keybindings": [
     {
       "key": "a",
-      "modifiers": ["ctrl"],
+      "modifiers": [
+        "ctrl"
+      ],
       "action": "select_all",
       "when": "normal"
     },
     {
       "key": "e",
-      "modifiers": ["ctrl"],
+      "modifiers": [
+        "ctrl"
+      ],
       "action": "toggle_file_explorer",
       "when": "normal"
     }
-  ]
+  ],
+  "clipboard": {
+    "use_osc52": false
+  }
 }
