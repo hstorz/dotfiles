@@ -10,6 +10,12 @@
       "modifiers": ["ctrl"],
       "action": "select_all",
       "when": "normal"
+    },
+    {
+      "key": "e",
+      "modifiers": ["ctrl"],
+      "action": "toggle_file_explorer",
+      "when": "normal"
     }
   ]
 }
