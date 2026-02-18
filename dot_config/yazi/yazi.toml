@@ -1,2 +1,12 @@
 [mgr]
 show_hidden = true
+
+[opener]
+fresh = [
+  { run = 'fresh %s', block = true }
+]
+
+[open]
+prepend_rules = [
+  { url = "*", use = "fresh" }
+]
