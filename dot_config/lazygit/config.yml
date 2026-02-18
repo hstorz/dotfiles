@@ -62,6 +62,11 @@ gui:
     
     cherryPickedCommitBgColor:
     - "#505050"
-    
+
   authorColors:
-   '*': '#65737E' 
+    '*': '#65737E'
+
+keybinding:
+  universal:
+    nextTab: 'ä'
+    prevTab: 'ö'
