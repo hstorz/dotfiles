@@ -22,6 +22,38 @@ local keys = {{
     key = "n",
     mods = "OPT",
     action = wezterm.action.SendString("~")
+}, {
+    key = "UpArrow",
+    mods = "CTRL|SHIFT|ALT",
+    action = wezterm.action.SplitPane({ direction = "Up" })
+}, {
+    key = "LeftArrow",
+    mods = "CTRL|SHIFT|ALT",
+    action = wezterm.action.SplitPane({ direction = "Left" })
+}, {
+    key = "DownArrow",
+    mods = "CTRL|SHIFT|ALT",
+    action = wezterm.action.SplitPane({ direction = "Down" })
+}, {
+    key = "RightArrow",
+    mods = "CTRL|SHIFT|ALT",
+    action = wezterm.action.SplitPane({ direction = "Right" })
+}, {
+    key = "UpArrow",
+    mods = "CMD|SHIFT|ALT",
+    action = wezterm.action.AdjustPaneSize { "Up", 1 }
+}, {
+    key = "DownArrow",
+    mods = "CMD|SHIFT|ALT",
+    action = wezterm.action.AdjustPaneSize { "Down", 1 }
+}, {
+    key = "LeftArrow",
+    mods = "CMD|SHIFT|ALT",
+    action = wezterm.action.AdjustPaneSize { "Left", 1 }
+}, {
+    key = "RightArrow",
+    mods = "CMD|SHIFT|ALT",
+    action = wezterm.action.AdjustPaneSize { "Right", 1 }
 }}
 
 -- State tracking per window
