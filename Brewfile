@@ -1,4 +1,5 @@
 tap "sinelaw/fresh"
+brew "biome"
 brew "chezmoi"
 brew "fresh-editor"
 brew "git"
