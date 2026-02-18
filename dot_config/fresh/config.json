@@ -24,5 +24,10 @@
   ],
   "clipboard": {
     "use_osc52": false
-  }
+  },
+	"languages": {
+    	"json": {
+    	    "show_whitespace_tabs": false
+    	}
+     }
 }
