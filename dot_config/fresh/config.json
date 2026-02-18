@@ -3,5 +3,13 @@
   "editor": {
     "cursor_style": "blinking_bar"
   },
-  "theme": "darcula"
+  "theme": "darcula",
+  "keybindings": [
+    {
+      "key": "a",
+      "modifiers": ["ctrl"],
+      "action": "select_all",
+      "when": "normal"
+    }
+  ]
 }
