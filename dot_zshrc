@@ -22,5 +22,5 @@ function y() {
 }
 
 # Load .zsh files (when available)
-test -r $HOME/.zshrc.local && source $HOME/.zshrc.local
 test -r $HOME/.zsh/aliases && source $HOME/.zsh/aliases
+test -r $HOME/.zshrc.local && source $HOME/.zshrc.local
