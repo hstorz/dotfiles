@@ -1,9 +1,0 @@
-# Catppuccin frappe theme with black background
-inherits = "catppuccin_frappe"
-
-"ui.background" = "black"
-"ui.text" = "white"
-
-[palette]
-black = "#000000"
-white = "#ffffff"
