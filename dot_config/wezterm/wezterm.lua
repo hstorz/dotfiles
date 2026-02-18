@@ -11,8 +11,16 @@ local function is_editor(pane)
     return exe:match('micro') or exe:match('fresh') or exe:match('yazi')
 end
 
+local function is_lazygit(pane)
+    local info = pane:get_foreground_process_info()
+    if not info or not info.executable then return false end
+    local exe = info.executable:lower()
+    return exe:match('lazygit')
+end
+
 -- Editor key table: CMD keys send CTRL
 local EDITOR_KEY_TABLE = "editor_mode"
+local LAZYGIT_KEY_TABLE = "lazygit_mode"
 
 local keys = {{
     key = "w",
@@ -57,28 +65,37 @@ local keys = {{
 }}
 
 -- State tracking per window
-local editor_active = {}
+local active_mode = {}
 
 if is_mac then
     -- Monitor pane changes and toggle key table
     wezterm.on('update-status', function(window, pane)
         local window_id = window:window_id()
-        local in_editor = is_editor(pane)
-        local was_in_editor = editor_active[window_id] or false
         
-        if in_editor ~= was_in_editor then
-            if in_editor then
-                -- Entering editor: activate CMD->CTRL mappings
+        -- Determine current mode (only one can be active, editor takes precedence)
+        local current_mode = nil
+        if is_editor(pane) then
+            current_mode = EDITOR_KEY_TABLE
+        elseif is_lazygit(pane) then
+            current_mode = LAZYGIT_KEY_TABLE
+        end
+        
+        local previous_mode = active_mode[window_id]
+        
+        -- Only act if mode has changed
+        if current_mode ~= previous_mode then
+            if current_mode then
+                -- Entering a special mode: activate its key table
                 window:perform_action(wezterm.action.ActivateKeyTable {
-                    name = EDITOR_KEY_TABLE,
+                    name = current_mode,
                     replace_current = true,
                     one_shot = false,
                 }, pane)
             else
-                -- Leaving editor: clear all key tables (back to default)
+                -- Leaving all special modes: clear key tables
                 window:perform_action(wezterm.action.ClearKeyTableStack, pane)
             end
-            editor_active[window_id] = in_editor
+            active_mode[window_id] = current_mode
         end
     end)
 end
@@ -126,6 +143,9 @@ config = {
             { key = "x", mods = "CMD", action = wezterm.action.SendKey({ key = "x", mods = "CTRL" }) },
             { key = "z", mods = "CMD", action = wezterm.action.SendKey({ key = "z", mods = "CTRL" }) },
             { key = "z", mods = "CMD|SHIFT", action = wezterm.action.SendKey({ key = "y", mods = "CTRL" }) },
+        },
+        [LAZYGIT_KEY_TABLE] = {
+            { key = "c", mods = "CMD", action = wezterm.action.SendKey({ key = "o", mods = "CTRL" }) },
         }
     } or {}
 }
