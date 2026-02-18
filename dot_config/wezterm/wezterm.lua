@@ -8,7 +8,7 @@ local function is_editor(pane)
     local info = pane:get_foreground_process_info()
     if not info or not info.executable then return false end
     local exe = info.executable:lower()
-    return exe:match('micro') or exe:match('fresh')
+    return exe:match('micro') or exe:match('fresh') or exe:match('yazi')
 end
 
 -- Editor key table: CMD keys send CTRL
@@ -118,6 +118,7 @@ config = {
             { key = "a", mods = "CMD", action = wezterm.action.SendKey({ key = "a", mods = "CTRL" }) },
             { key = "c", mods = "CMD", action = wezterm.action.SendKey({ key = "c", mods = "CTRL" }) },
             { key = "f", mods = "CMD", action = wezterm.action.SendKey({ key = "f", mods = "CTRL" }) },
+            { key = "q", mods = "CMD", action = wezterm.action.SendKey({ key = "q", mods = "CTRL" }) },
             { key = "p", mods = "CMD", action = wezterm.action.SendKey({ key = "p", mods = "CTRL" }) },
             { key = "s", mods = "CMD", action = wezterm.action.SendKey({ key = "s", mods = "CTRL" }) },
             { key = "v", mods = "CMD", action = wezterm.action.SendKey({ key = "v", mods = "CTRL" }) },
