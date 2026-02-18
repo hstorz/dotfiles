@@ -1,33 +1,29 @@
 {
-  "keymap": "macos",
-  "editor": {
-    "cursor_style": "blinking_bar"
-  },
-  "theme": "darcula",
-  "keybindings": [
-    {
-      "key": "a",
-      "modifiers": [
-        "ctrl"
-      ],
-      "action": "select_all",
-      "when": "normal"
-    },
-    {
-      "key": "e",
-      "modifiers": [
-        "ctrl"
-      ],
-      "action": "toggle_file_explorer",
-      "when": "normal"
-    }
-  ],
-  "clipboard": {
-    "use_osc52": false
-  },
+	"keymap": "macos",
+	"editor": {
+		"cursor_style": "blinking_bar"
+	},
+	"theme": "darcula",
+	"keybindings": [
+		{
+			"key": "a",
+			"modifiers": ["ctrl"],
+			"action": "select_all",
+			"when": "normal"
+		},
+		{
+			"key": "e",
+			"modifiers": ["ctrl"],
+			"action": "toggle_file_explorer",
+			"when": "normal"
+		}
+	],
+	"clipboard": {
+		"use_osc52": false
+	},
 	"languages": {
-    	"json": {
-    	    "show_whitespace_tabs": false
-    	}
-     }
+		"json": {
+			"show_whitespace_tabs": false
+		}
+	}
 }
