@@ -88,6 +88,7 @@ function M.get_key_tables(is_mac)
         [EDITOR_KEY_TABLE] = {
             { key = "a", mods = "CMD", action = wezterm.action.SendKey({ key = "a", mods = "CTRL" }) },
             { key = "c", mods = "CMD", action = wezterm.action.SendKey({ key = "c", mods = "CTRL" }) },
+            { key = "d", mods = "CMD", action = wezterm.action.SendKey({ key = "d", mods = "CTRL" }) },
             { key = "e", mods = "CMD", action = wezterm.action.SendKey({ key = "e", mods = "CTRL" }) },
             { key = "f", mods = "CMD", action = wezterm.action.SendKey({ key = "f", mods = "CTRL" }) },
             { key = "q", mods = "CMD", action = wezterm.action.SendKey({ key = "q", mods = "CTRL" }) },
