@@ -92,6 +92,7 @@ function M.get_key_tables(is_mac)
             { key = "f", mods = "CMD", action = wezterm.action.SendKey({ key = "f", mods = "CTRL" }) },
             { key = "q", mods = "CMD", action = wezterm.action.SendKey({ key = "q", mods = "CTRL" }) },
             { key = "p", mods = "CMD", action = wezterm.action.SendKey({ key = "p", mods = "CTRL" }) },
+            { key = "r", mods = "CMD", action = wezterm.action.SendKey({ key = "r", mods = "CTRL" }) },
             { key = "s", mods = "CMD", action = wezterm.action.SendKey({ key = "s", mods = "CTRL" }) },
             { key = "v", mods = "CMD", action = wezterm.action.SendKey({ key = "v", mods = "CTRL" }) },
             { key = "x", mods = "CMD", action = wezterm.action.SendKey({ key = "x", mods = "CTRL" }) },
