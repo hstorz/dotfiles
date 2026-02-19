@@ -12,9 +12,21 @@
 			"when": "normal"
 		},
 		{
+			"key": "d",
+			"modifiers": ["ctrl"],
+			"action": "duplicate_line",
+			"when": "normal"
+		},
+		{
 			"key": "e",
 			"modifiers": ["ctrl"],
 			"action": "toggle_file_explorer",
+			"when": "normal"
+		},
+		{
+			"key": "r",
+			"modifiers": ["ctrl"],
+			"action": "replace",
 			"when": "normal"
 		}
 	],
