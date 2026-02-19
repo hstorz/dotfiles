@@ -42,5 +42,7 @@ config = {
 -- Load tiled workspace configurations
 local develop_workspace = require 'workspaces.develop'
 develop_workspace.setup(config)
+local git_workspace = require 'workspaces.git'
+git_workspace.setup(config)
 
 return config
