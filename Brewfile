@@ -1,6 +1,7 @@
 tap "sinelaw/fresh"
 brew "biome"
 brew "chezmoi"
+brew "delta"
 brew "fresh-editor"
 brew "git"
 brew "lazygit"

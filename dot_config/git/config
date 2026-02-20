@@ -1,0 +1,20 @@
+[delta]
+    syntax-theme = Visual Studio Dark+
+    dark = true
+    line-numbers = true
+    side-by-side = false
+    navigate = true
+    hyperlinks = true
+    file-style = "#AAAAAA"
+    file-decoration-style = "gray box"
+    hunk-header-decoration-style = "#333333 box"
+    hunk-header-file-style = "#999999"
+    hunk-header-line-number-style = bold gray
+    minus-style = "syntax #200000"
+    plus-style = "syntax #001500"
+    line-numbers-minus-style = "#AA0000"
+    line-numbers-plus-style = "#00AA00"
+    line-numbers-zero-style = "gray"
+    line-numbers-left-style = "gray"
+    line-numbers-right-style = "gray"
+    whitespace-error-style = "gray" reverse
