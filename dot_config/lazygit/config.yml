@@ -3,37 +3,37 @@ git:
     - colorArg: always
       pager: delta --dark --paging=never
 customCommands:
-  - key: "x"
-    context: "files"
-    description: "Stage all, commit and push"
-    loadingText: "Staging, committing and pushing..."
+  - key: 'x'
+    context: 'files'
+    description: 'Stage all, commit and push'
+    loadingText: 'Staging, committing and pushing...'
     prompts:
-      - type: "input"
-        title: "Enter commit message"
+      - type: 'input'
+        title: 'Enter commit message'
     command: |
       git add -A &&
       git commit -m "{{index .PromptResponses 0}}" &&
       git push
     output: log
-  - key: "n"
-    context: "localBranches"
+  - key: 'n'
+    context: 'localBranches'
     prompts:
-      - type: "menu"
-        title: "What kind of branch is it?"
-        key: "BranchType"
+      - type: 'menu'
+        title: 'What kind of branch is it?'
+        key: 'BranchType'
         options:
-          - name: "feature"
-            value: "feature"
-          - name: "hotfix"
-            value: "hotfix"
-          - name: "release"
-            value: "release"
-      - type: "input"
-        title: "What is the new branch name?"
-        key: "BranchName"
-        initialValue: ""
+          - name: 'feature'
+            value: 'feature'
+          - name: 'hotfix'
+            value: 'hotfix'
+          - name: 'release'
+            value: 'release'
+      - type: 'input'
+        title: 'What is the new branch name?'
+        key: 'BranchName'
+        initialValue: ''
     command: "git checkout -b {{.Form.BranchType}}/$(echo '{{.Form.BranchName}}' | tr ' ' '-')"
-    loadingText: "Creating branch"
+    loadingText: 'Creating branch'
 # Vesper theme
 gui:
   theme:
@@ -57,9 +57,9 @@ gui:
     cherryPickedCommitBgColor:
       - "#505050"
   authorColors:
-    "*": "#65737E"
+    '*': '#65737E'
 keybinding:
   universal:
-    prevScreenMode: "#"
-    nextTab: "ä"
-    prevTab: "ö"
+    prevScreenMode: '#'   
+    nextTab: 'ä'
+    prevTab: 'ö'
