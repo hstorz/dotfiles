@@ -1,7 +1,10 @@
+# Delta diff config
 git:
   pagers:
     - colorArg: always
       pager: delta --dark --paging=never
+
+# Key bindings
 customCommands:
   - key: 'x'
     context: 'files'
@@ -34,6 +37,7 @@ customCommands:
         initialValue: ''
     command: "git checkout -b {{.Form.BranchType}}/$(echo '{{.Form.BranchName}}' | tr ' ' '-')"
     loadingText: 'Creating branch'
+    
 # Vesper theme
 gui:
   theme:
@@ -63,3 +67,8 @@ keybinding:
     prevScreenMode: '#'   
     nextTab: 'ä'
     prevTab: 'ö'
+
+# VS Code extension
+os:
+  editPreset: "vscode"
+promptToReturnFromSubprocess: false
