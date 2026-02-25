@@ -5,5 +5,5 @@
 ### Sync device platforms:
 
     - macOS
-    - Fedora Workstation
+    - Fedora Server & Workstation
     - Arch Linux
