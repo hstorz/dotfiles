@@ -13,15 +13,11 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
-# Open yazi and cd into rectent path
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	command yazi "$@" --cwd-file="$tmp"
-	IFS= read -r -d '' cwd < "$tmp"
-	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
-	rm -f -- "$tmp"
-}
+# Load .env.ssh (when available)
+test -f $HOME/.ssh/.env.ssh && source $HOME/.ssh/.env.ssh
 
 # Load .zsh files (when available)
-test -r $HOME/.zsh/aliases && source $HOME/.zsh/aliases
-test -r $HOME/.zshrc.local && source $HOME/.zshrc.local
+test -f $HOME/.zsh/aliases && source $HOME/.zsh/aliases
+test -f $HOME/.zsh/functions && source $HOME/.zsh/functions
+test -f $HOME/.zshrc.local && source $HOME/.zshrc.local
+
