@@ -1,0 +1,17 @@
+# Open yazi and cd into rectent path
+y() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    command yazi "$@" --cwd-file="$tmp"
+    IFS= read -r -d '' cwd < "$tmp"
+    [ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+    rm -f -- "$tmp"
+}
+
+# Start  ssh with tmux session
+s() {
+    local brew_path="/home/linuxbrew/.linuxbrew"
+    local tmux="${brew_path}/bin/tmux"
+
+    ssh -t "${SSH_USER}@${SSH_HOST}" \
+        "${tmux} new-session -A -s ${TMUX_SESSION}"
+}
