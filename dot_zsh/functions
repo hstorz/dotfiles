@@ -7,11 +7,12 @@ y() {
     rm -f -- "$tmp"
 }
 
-# Start  ssh with tmux session
+# Start ssh with tmux session
 s() {
-    local brew_path="/home/linuxbrew/.linuxbrew"
-    local tmux="${brew_path}/bin/tmux"
+    local tmux="/home/linuxbrew/.linuxbrew/bin/tmux"
+    local session="${TMUX_SESSION:-main}"
 
     ssh -t "${SSH_USER}@${SSH_HOST}" \
-        "${tmux} new-session -A -s ${TMUX_SESSION}"
+        "export LANG=en_US.UTF-8; \
+         exec ${tmux} new-session -A -s '${session}'"
 }
