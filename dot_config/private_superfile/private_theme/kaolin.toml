@@ -23,7 +23,7 @@ code_syntax_highlight = "catppuccin-macchiato"
 
 #-- Full Screen
 full_screen_fg = "#efefef"
-full_screen_bg = "#17171a"
+full_screen_bg = "#000000"
 
 #-- Gradient
 # Note: This currently only supports two colors.
@@ -31,33 +31,33 @@ gradient_color = ["#74b09a", "#c74a4d"]
 
 #-- File Panel
 file_panel_fg = "#efefef"
-file_panel_bg = "#17171a"
+file_panel_bg = "#000000"
 file_panel_border = "#74b09a"
 file_panel_border_active = "#74b09a"
 file_panel_top_directory_icon = "#f5c791"
 file_panel_top_path = "#d7936d"
 file_panel_item_selected_fg = "#4fa8a3"
-file_panel_item_selected_bg = "#17171a"
+file_panel_item_selected_bg = "#000000"
 
 #-- Footer
 footer_fg = "#efefef"
-footer_bg = "#17171a"
+footer_bg = "#000000"
 footer_border = "#74b09a"
 footer_border_active = "#57b2c2"
 
 #-- Sidebar
 sidebar_fg = "#efefef"
-sidebar_bg = "#17171a"
+sidebar_bg = "#000000"
 sidebar_title = "#f5c791"
-sidebar_border = "#17171a"
+sidebar_border = "#000000"
 sidebar_border_active = "#57b2c2"
 sidebar_item_selected_fg = "#ba667d"
-sidebar_item_selected_bg = "#17171a"
+sidebar_item_selected_bg = "#000000"
 sidebar_divider = "#868686"
 
 #-- Modals
 modal_fg = "#efefef"
-modal_bg = "#17171a"
+modal_bg = "#000000"
 modal_border_active = "#868686"
 modal_cancel_fg = "#eedcc1"
 modal_cancel_bg = "#c74a4d"
