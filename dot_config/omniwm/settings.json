@@ -1,0 +1,66 @@
+{
+  "borderColorBlue" : 0.017477396875619888,
+  "borderColorGreen" : 0.34760481119155884,
+  "borderColorRed" : 0.50183981657028198,
+  "bordersEnabled" : false,
+  "borderWidth" : 1,
+  "dwindleSingleWindowAspectRatio" : "fill",
+  "gapSize" : 4,
+  "gestureFingerCount" : 4,
+  "hotkeyBindings" : [
+    {
+      "binding" : "Option+Command+Left Arrow",
+      "id" : "workspaceBackAndForth"
+    },
+    {
+      "binding" : "Option+Command+Right Arrow",
+      "id" : "switchWorkspace.next"
+    },
+    {
+      "binding" : "Option+=",
+      "id" : "toggleQuakeTerminal"
+    }
+  ],
+  "outerGapBottom" : 2,
+  "outerGapLeft" : 2,
+  "outerGapRight" : 2,
+  "outerGapTop" : 2,
+  "scrollSensitivity" : 10,
+  "version" : 4,
+  "workspaceBarEnabled" : false,
+  "workspaceBarHideEmptyWorkspaces" : true,
+  "workspaceConfigurations" : [
+    {
+      "id" : "AD36F001-C57E-41A5-AC1D-DF5249D007F0",
+      "layoutType" : "niri",
+      "monitorAssignment" : {
+        "type" : "main"
+      },
+      "name" : "1"
+    },
+    {
+      "id" : "454CECD4-5E9D-4ED1-95D7-979D48817F5F",
+      "layoutType" : "niri",
+      "monitorAssignment" : {
+        "type" : "main"
+      },
+      "name" : "2"
+    },
+    {
+      "id" : "BEB842B5-E894-4791-9FD1-397C3CDD3538",
+      "layoutType" : "niri",
+      "monitorAssignment" : {
+        "type" : "main"
+      },
+      "name" : "3"
+    },
+    {
+      "id" : "248AA883-2261-4D45-943C-79C0E46A232B",
+      "layoutType" : "niri",
+      "monitorAssignment" : {
+        "type" : "main"
+      },
+      "name" : "4"
+    }
+  ]
+}
