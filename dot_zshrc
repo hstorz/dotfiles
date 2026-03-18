@@ -13,6 +13,10 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
+# Move cursor on shift arrow key press
+bindkey "\e[1;2D" backward-char
+bindkey "\e[1;2C" forward-char
+
 # Load .env.ssh (when available)
 test -f $HOME/.ssh/.env.ssh && source $HOME/.ssh/.env.ssh
 
