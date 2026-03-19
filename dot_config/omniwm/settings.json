@@ -56,7 +56,7 @@
       "id" : "004E6DF3-B5C6-49B6-8C52-3D9138781284"
     },
     {
-      "alwaysFloat" : true,
+      "assignToWorkspace" : "3",
       "bundleId" : "com.reactotron.app",
       "id" : "3CCF6A41-656A-42F2-B235-A9C8D564E40C"
     },
@@ -68,7 +68,6 @@
   ],
   "borderColorBlue" : 0.93095942554955757,
   "borderColorRed" : 0.94039334886199455,
-  "bordersEnabled" : false,
   "borderWidth" : 1,
   "dwindleSingleWindowAspectRatio" : "fill",
   "gapSize" : 4,
