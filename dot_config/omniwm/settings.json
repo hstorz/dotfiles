@@ -137,6 +137,22 @@
       "id" : "focus.right"
     },
     {
+      "binding" : "Control+Shift+Left Arrow",
+      "id" : "move.left"
+    },
+    {
+      "binding" : "Control+Shift+Down Arrow",
+      "id" : "move.down"
+    },
+    {
+      "binding" : "Control+Shift+Up Arrow",
+      "id" : "move.up"
+    },
+    {
+      "binding" : "Control+Shift+Right Arrow",
+      "id" : "move.right"
+    },
+    {
       "binding" : "Unassigned",
       "id" : "toggleFullscreen"
     },
