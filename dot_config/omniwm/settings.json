@@ -1,77 +1,46 @@
 {
   "appRules" : [
-    {
-      "assignToWorkspace" : "1",
-      "bundleId" : "com.google.Chrome",
-      "id" : "486CEFA6-69AA-4A3C-AF27-BCD38F4F138B"
-    },
-    {
-      "assignToWorkspace" : "1",
-      "bundleId" : "com.apple.Safari",
-      "id" : "81426D13-C1A5-475E-AFBC-00BBA05042D0"
-    },
-    {
-      "assignToWorkspace" : "3",
-      "bundleId" : "com.mitchellh.ghostty",
-      "id" : "7876C9EF-437E-4D4F-9C27-B1B02F4AABCE"
-    },
-    {
-      "assignToWorkspace" : "1",
-      "bundleId" : "com.microsoft.Outlook",
-      "id" : "8ECAB78B-BCDD-4245-BC25-1609A49B1C86"
-    },
-    {
-      "assignToWorkspace" : "2",
-      "bundleId" : "com.apple.iphonesimulator",
-      "id" : "2DEF844A-78FD-43AC-BF70-9E114FD9FBC9"
-    },
-    {
-      "assignToWorkspace" : "2",
-      "bundleId" : "com.microsoft.VSCode",
-      "id" : "AD214C78-863B-4AD7-BC30-3AA8853813C9"
-    },
-    {
-      "assignToWorkspace" : "1",
-      "bundleId" : "com.apple.finder",
-      "id" : "DA410B0D-53A6-4CB7-8704-F6B8466C5D99"
-    },
-    {
-      "assignToWorkspace" : "1",
-      "bundleId" : "com.microsoft.edgemac",
-      "id" : "35ACB2AF-4F67-4D8B-8EBF-0C0A6BD40183"
-    },
-    {
-      "assignToWorkspace" : "3",
-      "bundleId" : "com.github.wez.wezterm",
-      "id" : "7D98A7F6-2E83-4666-8D55-7C8E8DE5A337"
-    },
-    {
-      "assignToWorkspace" : "4",
-      "bundleId" : "com.microsoft.teams2",
-      "id" : "0ADFC3CA-A4EF-41A7-9DB5-B4A6F97891A5"
-    },
-    {
-      "assignToWorkspace" : "4",
-      "bundleId" : "com.google.Chrome.app.cifhbcnohmdccbgoicgdjpfamggdegmo",
-      "id" : "004E6DF3-B5C6-49B6-8C52-3D9138781284"
-    },
-    {
-      "assignToWorkspace" : "3",
-      "bundleId" : "com.reactotron.app",
-      "id" : "3CCF6A41-656A-42F2-B235-A9C8D564E40C"
-    },
-    {
-      "assignToWorkspace" : "3",
-      "bundleId" : "com.sourcegit-scm.sourcegit",
-      "id" : "B3045ED9-5F28-4215-B49C-1EB3BF4D053B"
-    }
+
   ],
   "borderColorBlue" : 0.93095942554955757,
   "borderColorRed" : 0.94039334886199455,
+  "bordersEnabled" : false,
   "borderWidth" : 1,
   "dwindleSingleWindowAspectRatio" : "fill",
   "gapSize" : 4,
   "hotkeyBindings" : [
+    {
+      "binding" : "Shift+Command+1",
+      "id" : "switchWorkspace.0"
+    },
+    {
+      "binding" : "Option+Shift+Command+1",
+      "id" : "moveToWorkspace.0"
+    },
+    {
+      "binding" : "Shift+Command+2",
+      "id" : "switchWorkspace.1"
+    },
+    {
+      "binding" : "Option+Shift+Command+2",
+      "id" : "moveToWorkspace.1"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "switchWorkspace.2"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveToWorkspace.2"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "switchWorkspace.3"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveToWorkspace.3"
+    },
     {
       "binding" : "Unassigned",
       "id" : "switchWorkspace.4"
@@ -137,22 +106,6 @@
       "id" : "focus.right"
     },
     {
-      "binding" : "Control+Shift+Left Arrow",
-      "id" : "move.left"
-    },
-    {
-      "binding" : "Control+Shift+Down Arrow",
-      "id" : "move.down"
-    },
-    {
-      "binding" : "Control+Shift+Up Arrow",
-      "id" : "move.up"
-    },
-    {
-      "binding" : "Control+Shift+Right Arrow",
-      "id" : "move.right"
-    },
-    {
       "binding" : "Unassigned",
       "id" : "toggleFullscreen"
     },
@@ -179,6 +132,7 @@
   "outerGapTop" : 2,
   "scrollSensitivity" : 10,
   "version" : 4,
+  "workspaceBarHideEmptyWorkspaces" : true,
   "workspaceConfigurations" : [
     {
       "id" : "AD36F001-C57E-41A5-AC1D-DF5249D007F0",
