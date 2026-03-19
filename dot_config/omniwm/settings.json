@@ -82,11 +82,11 @@
       "id" : "moveToWorkspace.8"
     },
     {
-      "binding" : "Option+Command+Left Arrow",
+      "binding" : "Option+Shift+Up Arrow",
       "id" : "workspaceBackAndForth"
     },
     {
-      "binding" : "Option+Command+Right Arrow",
+      "binding" : "Option+Shift+Down Arrow",
       "id" : "switchWorkspace.next"
     },
     {
@@ -106,8 +106,36 @@
       "id" : "focus.right"
     },
     {
+      "binding" : "Option+Shift+Command+Left Arrow",
+      "id" : "move.left"
+    },
+    {
+      "binding" : "Option+Shift+Command+Down Arrow",
+      "id" : "move.down"
+    },
+    {
+      "binding" : "Option+Shift+Command+Up Arrow",
+      "id" : "move.up"
+    },
+    {
+      "binding" : "Option+Shift+Command+Right Arrow",
+      "id" : "move.right"
+    },
+    {
       "binding" : "Unassigned",
       "id" : "toggleFullscreen"
+    },
+    {
+      "binding" : "Option+Shift+Left Arrow",
+      "id" : "moveColumn.left"
+    },
+    {
+      "binding" : "Option+Shift+Right Arrow",
+      "id" : "moveColumn.right"
+    },
+    {
+      "binding" : "Option+Shift+T",
+      "id" : "toggleColumnTabbed"
     },
     {
       "binding" : "Option+=",
