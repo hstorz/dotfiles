@@ -66,14 +66,12 @@
       "id" : "B3045ED9-5F28-4215-B49C-1EB3BF4D053B"
     }
   ],
-  "borderColorBlue" : 0.017477396875619888,
-  "borderColorGreen" : 0.34760481119155884,
-  "borderColorRed" : 0.50183981657028198,
+  "borderColorBlue" : 0.93095942554955757,
+  "borderColorRed" : 0.94039334886199455,
   "bordersEnabled" : false,
   "borderWidth" : 1,
   "dwindleSingleWindowAspectRatio" : "fill",
   "gapSize" : 4,
-  "gestureFingerCount" : 4,
   "hotkeyBindings" : [
     {
       "binding" : "Unassigned",
@@ -124,17 +122,19 @@
       "id" : "switchWorkspace.next"
     },
     {
-      "binding" : {
-        "keyCode" : 10,
-        "modifiers" : 4096
-      },
+      "binding" : "Command+Left Arrow",
       "id" : "focus.left"
     },
     {
-      "binding" : {
-        "keyCode" : 10,
-        "modifiers" : 512
-      },
+      "binding" : "Command+Down Arrow",
+      "id" : "focus.down"
+    },
+    {
+      "binding" : "Command+Up Arrow",
+      "id" : "focus.up"
+    },
+    {
+      "binding" : "Command+Right Arrow",
       "id" : "focus.right"
     },
     {
@@ -146,17 +146,24 @@
       "id" : "toggleQuakeTerminal"
     }
   ],
+  "monitorOrientationSettings" : [
+    {
+      "monitorDisplayId" : 1,
+      "monitorName" : "Built-in Retina Display",
+      "orientation" : "vertical"
+    }
+  ],
   "mouseWarpMonitorOrder" : [
     "SAMSUNG",
     "Built-in Retina Display"
   ],
+  "niriSingleWindowAspectRatio" : "16:9",
   "outerGapBottom" : 2,
   "outerGapLeft" : 2,
   "outerGapRight" : 2,
   "outerGapTop" : 2,
   "scrollSensitivity" : 10,
   "version" : 4,
-  "workspaceBarEnabled" : false,
   "workspaceConfigurations" : [
     {
       "id" : "AD36F001-C57E-41A5-AC1D-DF5249D007F0",
