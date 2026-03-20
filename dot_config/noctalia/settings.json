@@ -566,7 +566,7 @@
             }
         ],
         "showHeader": true,
-        "showKeybinds": false
+        "showKeybinds": true
     },
     "settingsVersion": 57,
     "systemMonitor": {

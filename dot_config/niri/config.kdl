@@ -67,6 +67,9 @@ input {
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
     // focus-follows-mouse max-scroll-amount="0%"
+
+    // Disable niri's built-in power key handling so logind handles it directly.
+    disable-power-key-handling
 }
 
 // You can configure outputs by their name, which you can find
@@ -273,8 +276,7 @@ spawn-at-startup "waybar"
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
 hotkey-overlay {
-    // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+    skip-at-startup
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -370,6 +372,9 @@ binds {
 
     // App launcher
     Alt+Space { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+
+    // Power menu
+    Mod+Shift+Escape { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
 
     // ------ Custom binds end --------
     
