@@ -16,3 +16,6 @@ keybind = ctrl+t=new_tab
 keybind = ctrl+plus=increase_font_size:1
 keybind = ctrl+minus=decrease_font_size:1
 keybind = ctrl+zero=reset_font_size
+
+# Disable quit confirmation dialog
+confirm-close-surface = false
