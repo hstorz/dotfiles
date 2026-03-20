@@ -584,6 +584,7 @@ binds {
     Mod+F { fullscreen-window; }
     Mod+Shift+Up { maximize-column; }
     Mod+Shift+Down { switch-preset-column-width; }
+    Mod+Shift+4 { screenshot; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
