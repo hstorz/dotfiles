@@ -350,7 +350,27 @@ binds {
     // ------ Custom binds start ------
     
     Mod+Return { spawn "ghostty"; }
-    
+
+    // Move window left/right
+    Mod+Shift+Left { move-column-left; }
+    Mod+Shift+Right { move-column-right; }
+
+    // Noctalia clipboard
+    Mod+Y { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
+
+    // Focus columns
+    Alt+1 { focus-column-first; }
+    Alt+2 { focus-column-last; }
+
+    // Move to next workspace
+    // Mod+Shift+Down { move-column-to-workspace-down; }
+
+    // Screenshot
+    Mod+Print { screenshot; }
+
+    // App launcher
+    Alt+Space { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+
     // ------ Custom binds end --------
     
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
@@ -402,7 +422,7 @@ binds {
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
     // or do a four-finger swipe up on a touchpad.
-    Mod+O repeat=false { toggle-overview; }
+    Alt+Shift+O repeat=false { toggle-overview; }
 
     Mod+Q repeat=false { close-window; }
 
@@ -436,10 +456,10 @@ binds {
     Mod+Ctrl+Home { move-column-to-first; }
     Mod+Ctrl+End  { move-column-to-last; }
 
-    Mod+Shift+Left  { focus-monitor-left; }
-    Mod+Shift+Down  { focus-monitor-down; }
-    Mod+Shift+Up    { focus-monitor-up; }
-    Mod+Shift+Right { focus-monitor-right; }
+    Mod+Shift+Alt+Left  { focus-monitor-left; }
+    Mod+Shift+Alt+Down  { focus-monitor-down; }
+    Mod+Shift+Alt+Up    { focus-monitor-up; }
+    Mod+Shift+Alt+Right { focus-monitor-right; }
     Mod+Shift+H     { focus-monitor-left; }
     Mod+Shift+J     { focus-monitor-down; }
     Mod+Shift+K     { focus-monitor-up; }
@@ -561,8 +581,9 @@ binds {
     // Mod+R { switch-preset-column-width-back; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
-    Mod+F { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
+    Mod+F { fullscreen-window; }
+    Mod+Shift+Up { maximize-column; }
+    Mod+Shift+Down { switch-preset-column-width; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".

@@ -8,7 +8,7 @@
         "customLaunchPrefixEnabled": false,
         "density": "default",
         "enableClipPreview": true,
-        "enableClipboardHistory": false,
+        "enableClipboardHistory": true,
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
@@ -45,7 +45,7 @@
         "capsuleColorKey": "tertiary",
         "capsuleOpacity": 1,
         "contentPadding": 2,
-        "density": "compact",
+        "density": "default",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
         "floating": false,
@@ -324,7 +324,7 @@
         "overviewEnabled": true
     },
     "dock": {
-        "animationSpeed": 1,
+        "animationSpeed": 2,
         "backgroundOpacity": 1,
         "colorizeIcons": false,
         "deadOpacity": 0.6,
@@ -369,7 +369,7 @@
         "compactLockScreen": false,
         "dimmerOpacity": 0.2,
         "enableBlurBehind": false,
-        "enableLockScreenCountdown": true,
+        "enableLockScreenCountdown": false,
         "enableLockScreenMediaControls": false,
         "enableShadows": true,
         "forceBlackScreenCorners": false,
@@ -399,7 +399,7 @@
             ]
         },
         "language": "",
-        "lockOnSuspend": true,
+        "lockOnSuspend": false,
         "lockScreenAnimations": false,
         "lockScreenBlur": 0,
         "lockScreenCountdownDuration": 10000,
@@ -541,43 +541,64 @@
         "position": "center",
         "powerOptions": [
             {
-                "action": "lock",
+                "action": "shutdown",
+                "command": "",
+                "countdownEnabled": false,
                 "enabled": true,
                 "keybind": "1"
             },
             {
-                "action": "suspend",
+                "action": "reboot",
+                "command": "",
+                "countdownEnabled": false,
                 "enabled": true,
                 "keybind": "2"
             },
             {
-                "action": "hibernate",
+                "action": "logout",
+                "command": "",
+                "countdownEnabled": false,
                 "enabled": true,
                 "keybind": "3"
             },
             {
-                "action": "reboot",
-                "enabled": true,
-                "keybind": "4"
+                "action": "lock",
+                "command": "",
+                "countdownEnabled": true,
+                "enabled": false,
+                "keybind": ""
             },
             {
-                "action": "logout",
-                "enabled": true,
-                "keybind": "5"
+                "action": "suspend",
+                "command": "",
+                "countdownEnabled": true,
+                "enabled": false,
+                "keybind": ""
             },
             {
-                "action": "shutdown",
-                "enabled": true,
-                "keybind": "6"
+                "action": "hibernate",
+                "command": "",
+                "countdownEnabled": true,
+                "enabled": false,
+                "keybind": ""
             },
             {
                 "action": "rebootToUefi",
-                "enabled": true,
-                "keybind": "7"
+                "command": "",
+                "countdownEnabled": true,
+                "enabled": false,
+                "keybind": ""
+            },
+            {
+                "action": "userspaceReboot",
+                "command": "",
+                "countdownEnabled": true,
+                "enabled": false,
+                "keybind": ""
             }
         ],
         "showHeader": true,
-        "showKeybinds": true
+        "showKeybinds": false
     },
     "settingsVersion": 57,
     "systemMonitor": {
