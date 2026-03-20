@@ -1,6 +1,40 @@
 {
   "appRules" : [
-
+    {
+      "assignToWorkspace" : "2",
+      "bundleId" : "com.microsoft.teams2",
+      "id" : "05C3ABEF-B342-4DF7-B5DD-B2012BAE71BF"
+    },
+    {
+      "assignToWorkspace" : "2",
+      "bundleId" : "com.google.Chrome.app.cifhbcnohmdccbgoicgdjpfamggdegmo",
+      "id" : "F215ABCF-035A-4488-BAE6-A52D53F380A3"
+    },
+    {
+      "assignToWorkspace" : "2",
+      "bundleId" : "com.sourcegit-scm.sourcegit",
+      "id" : "C246716F-09CF-4336-8B14-453BF54D63B2"
+    },
+    {
+      "assignToWorkspace" : "2",
+      "bundleId" : "com.reactotron.app",
+      "id" : "49D856F0-1310-49D0-AF62-A3507E284596"
+    },
+    {
+      "assignToWorkspace" : "1",
+      "bundleId" : "com.microsoft.VSCode",
+      "id" : "52C1A591-9D84-46EA-A122-AA781E4834DC"
+    },
+    {
+      "assignToWorkspace" : "1",
+      "bundleId" : "com.cmuxterm.app",
+      "id" : "F0F2D7DA-8238-4208-BABD-0AFF96798E5D"
+    },
+    {
+      "assignToWorkspace" : "1",
+      "bundleId" : "com.mitchellh.ghostty",
+      "id" : "DF7B0DFA-0F31-4D4F-A8EB-4CEBC7366EB7"
+    }
   ],
   "borderColorBlue" : 0.93095942554955757,
   "borderColorRed" : 0.94039334886199455,
@@ -126,11 +160,11 @@
       "id" : "toggleFullscreen"
     },
     {
-      "binding" : "Option+Shift+Left Arrow",
+      "binding" : "Shift+Command+Left Arrow",
       "id" : "moveColumn.left"
     },
     {
-      "binding" : "Option+Shift+Right Arrow",
+      "binding" : "Shift+Command+Right Arrow",
       "id" : "moveColumn.right"
     },
     {
@@ -138,8 +172,31 @@
       "id" : "toggleColumnTabbed"
     },
     {
+      "binding" : "Shift+Command+Down Arrow",
+      "id" : "cycleColumnWidthForward"
+    },
+    {
+      "binding" : "Shift+Command+Up Arrow",
+      "id" : "toggleColumnFullWidth"
+    },
+    {
+      "binding" : {
+        "keyCode" : 10,
+        "modifiers" : 512
+      },
+      "id" : "raiseAllFloatingWindows"
+    },
+    {
       "binding" : "Option+=",
       "id" : "toggleQuakeTerminal"
+    }
+  ],
+  "monitorBarSettings" : [
+    {
+      "id" : "BAC52A98-AE2A-45CE-9D09-28692125A05A",
+      "monitorDisplayId" : 5,
+      "monitorName" : "SAMSUNG",
+      "xOffset" : 0
     }
   ],
   "monitorOrientationSettings" : [
@@ -153,14 +210,22 @@
     "SAMSUNG",
     "Built-in Retina Display"
   ],
-  "niriSingleWindowAspectRatio" : "16:9",
+  "niriAlwaysCenterSingleColumn" : false,
+  "niriDefaultColumnWidth" : 0.5,
+  "niriMaxWindowsPerColumn" : 2,
+  "niriSingleWindowAspectRatio" : "none",
   "outerGapBottom" : 2,
   "outerGapLeft" : 2,
   "outerGapRight" : 2,
   "outerGapTop" : 2,
   "scrollSensitivity" : 10,
   "version" : 4,
+  "workspaceBarBackgroundOpacity" : 0,
   "workspaceBarHideEmptyWorkspaces" : true,
+  "workspaceBarNotchAware" : false,
+  "workspaceBarShowLabels" : false,
+  "workspaceBarWindowLevel" : "status",
+  "workspaceBarXOffset" : 200,
   "workspaceConfigurations" : [
     {
       "id" : "AD36F001-C57E-41A5-AC1D-DF5249D007F0",
@@ -171,28 +236,16 @@
       "name" : "1"
     },
     {
-      "id" : "454CECD4-5E9D-4ED1-95D7-979D48817F5F",
+      "id" : "DDB74341-18D7-4038-85AC-C9AD77F22DBE",
       "layoutType" : "niri",
       "monitorAssignment" : {
-        "type" : "main"
+        "output" : {
+          "displayId" : 1,
+          "name" : "Built-in Retina Display"
+        },
+        "type" : "specificDisplay"
       },
       "name" : "2"
-    },
-    {
-      "id" : "BEB842B5-E894-4791-9FD1-397C3CDD3538",
-      "layoutType" : "niri",
-      "monitorAssignment" : {
-        "type" : "main"
-      },
-      "name" : "3"
-    },
-    {
-      "id" : "248AA883-2261-4D45-943C-79C0E46A232B",
-      "layoutType" : "niri",
-      "monitorAssignment" : {
-        "type" : "main"
-      },
-      "name" : "4"
     }
   ]
 }
