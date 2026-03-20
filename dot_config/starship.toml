@@ -173,7 +173,7 @@ show_milliseconds = true
 format = " in $duration "
 style = "bg:gray"
 disabled = false
-show_notifications = true
+show_notifications = false
 min_time_to_notify = 45000
 
 [palettes.catppuccin_frappe]
