@@ -199,13 +199,6 @@
       "xOffset" : 0
     }
   ],
-  "monitorOrientationSettings" : [
-    {
-      "monitorDisplayId" : 1,
-      "monitorName" : "Built-in Retina Display",
-      "orientation" : "vertical"
-    }
-  ],
   "mouseWarpMonitorOrder" : [
     "SAMSUNG",
     "Built-in Retina Display"
@@ -225,7 +218,7 @@
   "workspaceBarNotchAware" : false,
   "workspaceBarShowLabels" : false,
   "workspaceBarWindowLevel" : "status",
-  "workspaceBarXOffset" : 200,
+  "workspaceBarXOffset" : -240,
   "workspaceConfigurations" : [
     {
       "id" : "AD36F001-C57E-41A5-AC1D-DF5249D007F0",
