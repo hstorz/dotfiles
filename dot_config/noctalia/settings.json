@@ -9,9 +9,9 @@
         "density": "compact",
         "enableClipPreview": true,
         "enableClipboardHistory": true,
-        "enableSessionSearch": true,
-        "enableSettingsSearch": true,
-        "enableWindowsSearch": true,
+        "enableSessionSearch": false,
+        "enableSettingsSearch": false,
+        "enableWindowsSearch": false,
         "iconMode": "tabler",
         "ignoreMouseInput": false,
         "overviewLayer": true,
@@ -22,7 +22,7 @@
         "showCategories": false,
         "showIconBackground": false,
         "sortByMostUsed": true,
-        "terminalCommand": "alacritty -e",
+        "terminalCommand": "ghostty -e",
         "useApp2Unit": false,
         "viewMode": "list"
     },
@@ -319,7 +319,8 @@
             "brave-browser",
             "code",
             "brave-kblpdimlnpcclpeegedgiighibgjmlff-Default",
-            "com.discordapp.Discord"
+            "com.discordapp.Discord",
+            "md.obsidian.Obsidian"
         ],
         "pinnedStatic": false,
         "position": "bottom",
