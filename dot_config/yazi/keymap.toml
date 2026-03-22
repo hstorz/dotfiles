@@ -1,4 +1,0 @@
-[mgr]
-prepend_keymap = [
-	{ on = ["<A>"], run = "create --dir", desc = "Create new folder" },
-]

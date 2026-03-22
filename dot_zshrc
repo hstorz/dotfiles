@@ -25,3 +25,4 @@ test -f $HOME/.zsh/aliases && source $HOME/.zsh/aliases
 test -f $HOME/.zsh/functions && source $HOME/.zsh/functions
 test -f $HOME/.zshrc.local && source $HOME/.zshrc.local
 
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
