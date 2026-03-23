@@ -1,0 +1,44 @@
+#compdef npm pnpm bun
+
+# Unified script autocomplete for npm / pnpm / bun
+
+__node_scripts() {
+  local -a scripts
+  if [[ -f package.json ]]; then
+    scripts=("${(@f)$(jq -r '.scripts | keys[]' package.json 2>/dev/null)}")
+  else
+    scripts=()
+  fi
+  _describe 'project scripts' scripts
+}
+
+__node_commands() {
+  _values 'node package manager commands' \
+    run dev test build start install add remove update
+}
+
+_node_scripts_completion() {
+  local context state state_descr line
+  typeset -A opt_args
+
+  _arguments -C \
+    '1:command:->cmd' \
+    '2:script:->script' \
+    '*::arg:->args'
+
+  case $state in
+    cmd)
+      __node_commands
+      ;;
+    script)
+      if [[ $words[2] == run ]]; then
+        __node_scripts
+      fi
+      ;;
+  esac
+}
+
+# Register for all three tools
+compdef _node_scripts_completion npm
+compdef _node_scripts_completion pnpm
+compdef _node_scripts_completion bun
