@@ -18,3 +18,6 @@ alias docker="podman"
 alias b="biome check --write ."
 alias B="biome format --write ."
 alias bl="biome lint --write ."
+
+# list alias
+alias ls="ls -1aF --color=auto"
