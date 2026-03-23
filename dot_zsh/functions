@@ -29,3 +29,27 @@ s() {
         "export LANG=en_US.UTF-8; \
          exec ${tmux} new-session -A -s '${session}'"
 }
+
+# Run bun scripts
+run() {
+  local script
+  script=$(jq -r '.scripts | keys[]' package.json \
+    | fzf --prompt="Select script: " --layout=reverse-list)
+  [[ -n "$script" ]] && bun run "$script"
+}
+
+# Run npm scripts
+nrun() {
+  local script
+  script=$(jq -r '.scripts | keys[]' package.json \
+    | fzf --prompt="Select script: " --layout=reverse-list)
+  [[ -n "$script" ]] && npm run "$script"
+}
+
+# Run pnpm scripts
+prun() {
+  local script
+  script=$(jq -r '.scripts | keys[]' package.json \
+    | fzf --prompt="Select script: " --layout=reverse-list)
+  [[ -n "$script" ]] && pnpm run "$script"
+}
