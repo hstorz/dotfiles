@@ -135,6 +135,7 @@ layout {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
+        proportion 1.0
 
         // Fixed sets the width in logical pixels exactly.
         // fixed 1920
@@ -436,6 +437,7 @@ binds {
     Alt+Shift+O repeat=false { toggle-overview; }
 
     Mod+Q repeat=false { close-window; }
+    Mod+W repeat=false { close-window; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
@@ -593,8 +595,8 @@ binds {
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { fullscreen-window; }
-    Mod+Shift+Up { maximize-column; }
-    Mod+Shift+Down { switch-preset-column-width; }
+    Mod+Shift+Up { switch-preset-column-width; }
+    Mod+Shift+Down { switch-preset-column-width-back; }
     Mod+Shift+4 { screenshot; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
@@ -614,21 +616,24 @@ binds {
     // * adjust width as a percentage of screen width: "-10%" or "+10%"
     // Pixel sizes use logical, or scaled, pixels. I.e. on an output with scale 2.0,
     // set-column-width "100" will make the column occupy 200 physical screen pixels.
-    Mod+Minus { set-column-width "-10%"; }
-    Mod+Equal { set-column-width "+10%"; }
+    // Mod+Minus { set-column-width "-33%"; }
+    // Mod+Plus { set-column-width "+33%"; }
+    // Mod+Shift+Up { maximize-column; }
+    // Mod+Shift+Down { switch-preset-column-width; }
+
 
     // Finer height adjustments when in column with other windows.
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    Mod+V       { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    // Mod+V       { toggle-window-floating; }
+    // Mod+Shift+V { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,
     // rather than stacked on top of each other.
-    Mod+W { toggle-column-tabbed-display; }
+    // Mod+W { toggle-column-tabbed-display; }
 
     // Actions to switch layouts.
     // Note: if you uncomment these, make sure you do NOT have
