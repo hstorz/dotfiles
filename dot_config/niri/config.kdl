@@ -437,7 +437,6 @@ binds {
     Alt+Shift+O repeat=false { toggle-overview; }
 
     Mod+Q repeat=false { close-window; }
-    Mod+W repeat=false { close-window; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
@@ -594,16 +593,17 @@ binds {
     // Mod+R { switch-preset-column-width-back; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
-    Mod+F { fullscreen-window; }
+    Mod+Ctrl+F { fullscreen-window; }
     Mod+Shift+Up { switch-preset-column-width; }
     Mod+Shift+Down { switch-preset-column-width-back; }
     Mod+Shift+4 { screenshot; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
-    Mod+Ctrl+F { expand-column-to-available-width; }
+    Ctrl+Shift+F { expand-column-to-available-width; }
 
-    Mod+C { center-column; }
+    Mod+C { spawn-sh "wtype -M ctrl -k c"; }
+    Mod+V { spawn-sh "wtype -M ctrl -k v"; }
 
     // Center all fully visible columns on screen.
     Mod+Ctrl+C { center-visible-columns; }
@@ -620,7 +620,7 @@ binds {
     // Mod+Plus { set-column-width "+33%"; }
     // Mod+Shift+Up { maximize-column; }
     // Mod+Shift+Down { switch-preset-column-width; }
-
+    Alt+Shift+F { maximize-column; }
 
     // Finer height adjustments when in column with other windows.
     Mod+Shift+Minus { set-window-height "-10%"; }
