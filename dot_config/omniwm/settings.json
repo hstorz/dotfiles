@@ -216,11 +216,15 @@
       "id" : "focusColumn.8"
     },
     {
-      "binding" : "Shift+Command+Down Arrow",
+      "binding" : "Shift+Command+Up Arrow",
       "id" : "cycleColumnWidthForward"
     },
     {
-      "binding" : "Shift+Command+Up Arrow",
+      "binding" : "Shift+Command+Down Arrow",
+      "id" : "cycleColumnWidthBackward"
+    },
+    {
+      "binding" : "Option+Shift+Command+Up Arrow",
       "id" : "toggleColumnFullWidth"
     },
     {
@@ -255,7 +259,8 @@
   "niriColumnWidthPresets" : [
     0.33000000000000002,
     0.5,
-    0.66000000000000003
+    0.66000000000000003,
+    1
   ],
   "niriDefaultColumnWidth" : 0.5,
   "niriMaxWindowsPerColumn" : 2,
