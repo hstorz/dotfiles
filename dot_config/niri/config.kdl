@@ -397,8 +397,8 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    //Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    //Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
@@ -588,7 +588,7 @@ binds {
     // Expel the bottom window from the focused column to the right.
     Mod+Period { expel-window-from-column; }
 
-    Mod+R { switch-preset-column-width; }
+    // Mod+R { switch-preset-column-width; }
     // Cycling through the presets in reverse order is also possible.
     // Mod+R { switch-preset-column-width-back; }
     Mod+Shift+R { switch-preset-window-height; }
@@ -602,8 +602,17 @@ binds {
     // Makes the column "fill the rest of the space".
     Ctrl+Shift+F { expand-column-to-available-width; }
 
+    // Use Mac CMD as Ctrl
+    Mod+A { spawn-sh "wtype -M ctrl -k a"; }
     Mod+C { spawn-sh "wtype -M ctrl -k c"; }
+    Mod+D { spawn-sh "wtype -M ctrl -k d"; }
+    Mod+F { spawn-sh "wtype -M ctrl -k f"; }
+    Mod+R { spawn-sh "wtype -M ctrl -k r"; }
+    Mod+T { spawn-sh "wtype -M ctrl -k t"; }
     Mod+V { spawn-sh "wtype -M ctrl -k v"; }
+    Mod+W { spawn-sh "wtype -M ctrl -k w"; }
+    Mod+X { spawn-sh "wtype -M ctrl -k x"; }
+    Mod+Z { spawn-sh "wtype -M ctrl -k z"; }
 
     // Center all fully visible columns on screen.
     Mod+Ctrl+C { center-visible-columns; }
@@ -624,7 +633,7 @@ binds {
 
     // Finer height adjustments when in column with other windows.
     Mod+Shift+Minus { set-window-height "-10%"; }
-    Mod+Shift+Equal { set-window-height "+10%"; }
+    Mod+Shift+Plus { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
     // Mod+V       { toggle-window-floating; }
