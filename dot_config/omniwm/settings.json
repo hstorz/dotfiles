@@ -41,7 +41,7 @@
   "bordersEnabled" : false,
   "borderWidth" : 1,
   "dwindleSingleWindowAspectRatio" : "fill",
-  "gapSize" : 4,
+  "gapSize" : 0,
   "hotkeyBindings" : [
     {
       "binding" : "Shift+Command+1",
@@ -260,17 +260,16 @@
   "niriDefaultColumnWidth" : 0.5,
   "niriMaxWindowsPerColumn" : 2,
   "niriSingleWindowAspectRatio" : "none",
-  "outerGapBottom" : 2,
-  "outerGapLeft" : 2,
-  "outerGapRight" : 2,
-  "outerGapTop" : 2,
+  "outerGapBottom" : 0,
+  "outerGapLeft" : 0,
+  "outerGapRight" : 0,
+  "outerGapTop" : 0,
   "scrollSensitivity" : 10,
   "version" : 4,
   "workspaceBarBackgroundOpacity" : 0,
   "workspaceBarHideEmptyWorkspaces" : true,
   "workspaceBarNotchAware" : false,
   "workspaceBarShowLabels" : false,
-  "workspaceBarWindowLevel" : "status",
   "workspaceBarXOffset" : -240,
   "workspaceConfigurations" : [
     {
