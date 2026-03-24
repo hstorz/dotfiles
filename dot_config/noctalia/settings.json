@@ -192,6 +192,10 @@
     },
     "brightness": {
         "backlightDeviceMappings": [
+            {
+                "device": "/sys/class/backlight/gmux_backlight",
+                "output": "eDP-1"
+            }
         ],
         "brightnessStep": 5,
         "enableDdcSupport": false,
