@@ -45,19 +45,19 @@
   "gapSize" : 4,
   "hotkeyBindings" : [
     {
-      "binding" : "Shift+Command+1",
+      "binding" : "Unassigned",
       "id" : "switchWorkspace.0"
     },
     {
-      "binding" : "Option+Shift+Command+1",
+      "binding" : "Shift+Command+Left Arrow",
       "id" : "moveToWorkspace.0"
     },
     {
-      "binding" : "Shift+Command+2",
+      "binding" : "Unassigned",
       "id" : "switchWorkspace.1"
     },
     {
-      "binding" : "Option+Shift+Command+2",
+      "binding" : "Shift+Command+Right Arrow",
       "id" : "moveToWorkspace.1"
     },
     {
@@ -141,6 +141,22 @@
       "id" : "focus.right"
     },
     {
+      "binding" : "Unassigned",
+      "id" : "moveWindowToWorkspaceUp"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveWindowToWorkspaceDown"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspaceUp"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspaceDown"
+    },
+    {
       "binding" : "Option+Shift+Command+Left Arrow",
       "id" : "move.left"
     },
@@ -161,11 +177,11 @@
       "id" : "toggleFullscreen"
     },
     {
-      "binding" : "Shift+Command+Left Arrow",
+      "binding" : "Option+Left Arrow",
       "id" : "moveColumn.left"
     },
     {
-      "binding" : "Shift+Command+Right Arrow",
+      "binding" : "Option+Right Arrow",
       "id" : "moveColumn.right"
     },
     {
