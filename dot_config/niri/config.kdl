@@ -358,10 +358,6 @@ binds {
     Alt+T { spawn "ghostty"; }
     Alt+F { spawn "nautilus"; }
 
-    // Move window left/right
-    Ctrl+Shift+Left { move-column-left; }
-    Ctrl+Shift+Right { move-column-right; }
-
     // Noctalia clipboard
     Ctrl+Y { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
 
@@ -450,14 +446,14 @@ binds {
     // Mod+K     { focus-window-up; }
     // Mod+L     { focus-column-right; }
 
-    Mod+Ctrl+Left  { move-column-left; }
-    Mod+Ctrl+Down  { move-window-down; }
-    Mod+Ctrl+Up    { move-window-up; }
-    Mod+Ctrl+Right { move-column-right; }
-    Mod+Ctrl+H     { move-column-left; }
-    Mod+Ctrl+J     { move-window-down; }
-    Mod+Ctrl+K     { move-window-up; }
-    Mod+Ctrl+L     { move-column-right; }
+    Mod+Left  { move-column-left; }
+    Mod+Right { move-column-right; }
+    Mod+Up    { move-window-up; }
+    Mod+Down  { move-window-down; }
+    // Mod+Ctrl+H     { move-column-left; }
+    // Mod+Ctrl+J     { move-window-down; }
+    // Mod+Ctrl+K     { move-window-up; }
+    // Mod+Ctrl+L     { move-column-right; }
 
     // Alternative commands that move across workspaces when reaching
     // the first or last window in a column.
@@ -597,8 +593,8 @@ binds {
     // Mod+Shift+R { switch-preset-window-height; }
     // Mod+Ctrl+R { reset-window-height; }
     Mod+Ctrl+F { fullscreen-window; }
-    Ctrl+Shift+Up { switch-preset-column-width; }
-    Ctrl+Shift+Down { switch-preset-column-width-back; }
+    Ctrl+Shift+Right { switch-preset-column-width; }
+    Ctrl+Shift+Left { switch-preset-column-width-back; }
     Ctrl+Shift+4 { screenshot; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
@@ -631,8 +627,8 @@ binds {
     // Mod+Shift+Up { maximize-column; }
     // Mod+Shift+Down { switch-preset-column-width; }
     Alt+Shift+F { maximize-column; }
-    Ctrl+Alt+Shift+Up { maximize-column; }
-    Ctrl+Alt+Shift+Down { set-column-width "50%"; }
+    Ctrl+Shift+Up { maximize-column; }
+    Ctrl+Shift+Down { set-column-width "50%"; }
 
     // Finer height adjustments when in column with other windows.
     Mod+Shift+Minus { set-window-height "-10%"; }
