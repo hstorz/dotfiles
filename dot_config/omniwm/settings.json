@@ -245,6 +245,10 @@
       "id" : "toggleColumnFullWidth"
     },
     {
+      "binding" : "Option+Shift+Command+Down Arrow",
+      "id" : "balanceSizes"
+    },
+    {
       "binding" : "Control+Tab",
       "id" : "openCommandPalette"
     },
