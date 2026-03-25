@@ -1,41 +1,73 @@
 {
-	"keymap": "macos",
-	"editor": {
-		"cursor_style": "blinking_bar"
-	},
-	"theme": "vesper",
-	"keybindings": [
-		{
-			"key": "a",
-			"modifiers": ["ctrl"],
-			"action": "select_all",
-			"when": "normal"
-		},
-		{
-			"key": "d",
-			"modifiers": ["ctrl"],
-			"action": "duplicate_line",
-			"when": "normal"
-		},
-		{
-			"key": "e",
-			"modifiers": ["ctrl"],
-			"action": "toggle_file_explorer",
-			"when": "normal"
-		},
-		{
-			"key": "r",
-			"modifiers": ["ctrl"],
-			"action": "replace",
-			"when": "normal"
-		}
-	],
-	"clipboard": {
-		"use_osc52": false
-	},
-	"languages": {
-		"json": {
-			"show_whitespace_tabs": false
-		}
-	}
+  "keymap": "macos",
+  "editor": {
+    "cursor_style": "blinking_bar"
+  },
+  "theme": "vesper",
+  "keybindings": [
+    {
+      "key": "a",
+      "modifiers": [
+        "ctrl"
+      ],
+      "action": "select_all",
+      "when": "normal"
+    },
+    {
+      "key": "d",
+      "modifiers": [
+        "ctrl"
+      ],
+      "action": "duplicate_line",
+      "when": "normal"
+    },
+    {
+      "key": "e",
+      "modifiers": [
+        "ctrl"
+      ],
+      "action": "toggle_file_explorer",
+      "when": "normal"
+    },
+    {
+      "key": "r",
+      "modifiers": [
+        "ctrl"
+      ],
+      "action": "replace",
+      "when": "normal"
+    },
+    {
+      "key": "w",
+      "modifiers": [
+        "ctrl"
+      ],
+      "action": "quit",
+      "when": "normal"
+    },
+    {
+      "key": "down",
+      "modifiers": [
+        "alt"
+      ],
+      "action": "find_next",
+      "when": "normal"
+    },
+    {
+      "key": "up",
+      "modifiers": [
+        "alt"
+      ],
+      "action": "find_previous",
+      "when": "normal"
+    }
+  ],
+  "clipboard": {
+    "use_osc52": true
+  },
+  "languages": {
+    "json": {
+      "show_whitespace_tabs": false
+    }
+  }
 }
