@@ -356,6 +356,7 @@ binds {
     // ------ Custom binds start ------
     
     Ctrl+Return { spawn "ghostty"; }
+    Alt+F { spawn "nautilus"; }
 
     // Move window left/right
     Ctrl+Shift+Left { move-column-left; }
