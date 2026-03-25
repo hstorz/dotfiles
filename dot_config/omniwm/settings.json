@@ -177,11 +177,11 @@
       "id" : "toggleFullscreen"
     },
     {
-      "binding" : "Shift+Command+Left Arrow",
+      "binding" : "Control+Shift+Left Arrow",
       "id" : "moveColumn.left"
     },
     {
-      "binding" : "Shift+Command+Right Arrow",
+      "binding" : "Control+Shift+Right Arrow",
       "id" : "moveColumn.right"
     },
     {
@@ -233,19 +233,19 @@
       "id" : "focusColumn.8"
     },
     {
-      "binding" : "Shift+Command+Up Arrow",
+      "binding" : "Shift+Command+Right Arrow",
       "id" : "cycleColumnWidthForward"
     },
     {
-      "binding" : "Shift+Command+Down Arrow",
+      "binding" : "Shift+Command+Left Arrow",
       "id" : "cycleColumnWidthBackward"
     },
     {
-      "binding" : "Option+Shift+Command+Up Arrow",
+      "binding" : "Shift+Command+Up Arrow",
       "id" : "toggleColumnFullWidth"
     },
     {
-      "binding" : "Option+Shift+Command+Down Arrow",
+      "binding" : "Shift+Command+Down Arrow",
       "id" : "balanceSizes"
     },
     {
