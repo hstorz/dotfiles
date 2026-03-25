@@ -7,7 +7,7 @@ cursor-style = bar
 cursor-style-blink = true
 
 # Key bindings for common actions
-keybind = alt+l=text:@
+keybind = ctrl+n=new_window
 
 # Disable quit confirmation dialog
 confirm-close-surface = false
