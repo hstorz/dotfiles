@@ -355,7 +355,7 @@ window-rule {
 binds {
     // ------ Custom binds start ------
     
-    Ctrl+Return { spawn "ghostty"; }
+    Alt+T { spawn "ghostty"; }
     Alt+F { spawn "nautilus"; }
 
     // Move window left/right
