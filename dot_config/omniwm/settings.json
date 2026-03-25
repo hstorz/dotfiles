@@ -260,7 +260,7 @@
       "id" : "raiseAllFloatingWindows"
     },
     {
-      "binding" : "Option+T",
+      "binding" : "Option+Shift+T",
       "id" : "toggleQuakeTerminal"
     }
   ],
