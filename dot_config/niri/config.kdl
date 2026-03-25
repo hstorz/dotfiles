@@ -358,8 +358,8 @@ binds {
     Ctrl+Return { spawn "ghostty"; }
 
     // Move window left/right
-    Alt+Left { move-column-left; }
-    Alt+Right { move-column-right; }
+    Ctrl+Shift+Left { move-column-left; }
+    Ctrl+Shift+Right { move-column-right; }
 
     // Noctalia clipboard
     Ctrl+Y { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
@@ -563,8 +563,8 @@ binds {
     // Mod+7 { focus-workspace 7; }
     // Mod+8 { focus-workspace 8; }
     // Mod+9 { focus-workspace 9; }
-    Ctrl+Shift+Left { move-column-to-workspace 1; }
-    Ctrl+Shift+Right { move-column-to-workspace 2; }
+    Alt+Shift+Left { move-column-to-workspace 1; }
+    Alt+Shift+Right { move-column-to-workspace 2; }
     // Mod+Ctrl+3 { move-column-to-workspace 3; }
     // Mod+Ctrl+4 { move-column-to-workspace 4; }
     // Mod+Ctrl+5 { move-column-to-workspace 5; }
@@ -630,6 +630,8 @@ binds {
     // Mod+Shift+Up { maximize-column; }
     // Mod+Shift+Down { switch-preset-column-width; }
     Alt+Shift+F { maximize-column; }
+    Ctrl+Alt+Shift+Up { maximize-column; }
+    Ctrl+Alt+Shift+Down { set-column-width "50%"; }
 
     // Finer height adjustments when in column with other windows.
     Mod+Shift+Minus { set-window-height "-10%"; }
