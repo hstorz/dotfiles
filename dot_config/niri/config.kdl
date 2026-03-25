@@ -17,7 +17,7 @@ input {
             // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
             layout "de"
             variant "mac_nodeadkeys"
-            options "ctrl:nocaps"
+            options "ctrl:nocaps,ctrl:swap_lwin_lctl"
 
             // If this section is empty, niri will fetch xkb settings
             // from org.freedesktop.locale1. You can control these using
@@ -355,18 +355,20 @@ window-rule {
 binds {
     // ------ Custom binds start ------
     
-    Mod+Return { spawn "ghostty"; }
+    Ctrl+Return { spawn "ghostty"; }
 
     // Move window left/right
-    Mod+Shift+Left { move-column-left; }
-    Mod+Shift+Right { move-column-right; }
+    Alt+Left { move-column-left; }
+    Alt+Right { move-column-right; }
 
     // Noctalia clipboard
-    Mod+Y { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
+    Ctrl+Y { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
 
     // Focus columns
-    Alt+1 { focus-column-first; }
-    Alt+2 { focus-column-last; }
+    Alt+1 { focus-column 1; }
+    Alt+2 { focus-column 2; }
+    Alt+3 { focus-column 3; }
+    Alt+4 { focus-column 4; }
 
     // Move to next workspace
     // Mod+Shift+Down { move-column-to-workspace-down; }
@@ -438,14 +440,14 @@ binds {
 
     Mod+Q repeat=false { close-window; }
 
-    Mod+Left  { focus-column-left; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
-    Mod+Right { focus-column-right; }
-    Mod+H     { focus-column-left; }
-    Mod+J     { focus-window-down; }
-    Mod+K     { focus-window-up; }
-    Mod+L     { focus-column-right; }
+    Ctrl+Left  { focus-column-left; }
+    Ctrl+Down  { focus-window-down; }
+    Ctrl+Up    { focus-window-up; }
+    Ctrl+Right { focus-column-right; }
+    // Mod+H     { focus-column-left; }
+    // Mod+J     { focus-window-down; }
+    // Mod+K     { focus-window-up; }
+    // Mod+L     { focus-column-right; }
 
     Mod+Ctrl+Left  { move-column-left; }
     Mod+Ctrl+Down  { move-window-down; }
@@ -477,14 +479,14 @@ binds {
     Mod+Shift+K     { focus-monitor-up; }
     Mod+Shift+L     { focus-monitor-right; }
 
-    Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
-    Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
-    Mod+Shift+Ctrl+H     { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
-    Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
+    // Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
+    // Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
+    // Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
+    // Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
+    // Mod+Shift+Ctrl+H     { move-column-to-monitor-left; }
+    // Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
+    // Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
+    // Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Shift+Ctrl+Left  { move-window-to-monitor-left; }
@@ -552,24 +554,24 @@ binds {
     //
     // For example, with 2 workspaces + 1 empty, indices 3, 4, 5 and so on
     // will all refer to the 3rd workspace.
-    Mod+1 { focus-workspace 1; }
-    Mod+2 { focus-workspace 2; }
-    Mod+3 { focus-workspace 3; }
-    Mod+4 { focus-workspace 4; }
-    Mod+5 { focus-workspace 5; }
-    Mod+6 { focus-workspace 6; }
-    Mod+7 { focus-workspace 7; }
-    Mod+8 { focus-workspace 8; }
-    Mod+9 { focus-workspace 9; }
-    Mod+Ctrl+1 { move-column-to-workspace 1; }
-    Mod+Ctrl+2 { move-column-to-workspace 2; }
-    Mod+Ctrl+3 { move-column-to-workspace 3; }
-    Mod+Ctrl+4 { move-column-to-workspace 4; }
-    Mod+Ctrl+5 { move-column-to-workspace 5; }
-    Mod+Ctrl+6 { move-column-to-workspace 6; }
-    Mod+Ctrl+7 { move-column-to-workspace 7; }
-    Mod+Ctrl+8 { move-column-to-workspace 8; }
-    Mod+Ctrl+9 { move-column-to-workspace 9; }
+    // Mod+1 { focus-workspace 1; }
+    // Mod+2 { focus-workspace 2; }
+    // Mod+3 { focus-workspace 3; }
+    // Mod+4 { focus-workspace 4; }
+    // Mod+5 { focus-workspace 5; }
+    // Mod+6 { focus-workspace 6; }
+    // Mod+7 { focus-workspace 7; }
+    // Mod+8 { focus-workspace 8; }
+    // Mod+9 { focus-workspace 9; }
+    Ctrl+Shift+Left { move-column-to-workspace 1; }
+    Ctrl+Shift+Right { move-column-to-workspace 2; }
+    // Mod+Ctrl+3 { move-column-to-workspace 3; }
+    // Mod+Ctrl+4 { move-column-to-workspace 4; }
+    // Mod+Ctrl+5 { move-column-to-workspace 5; }
+    // Mod+Ctrl+6 { move-column-to-workspace 6; }
+    // Mod+Ctrl+7 { move-column-to-workspace 7; }
+    // Mod+Ctrl+8 { move-column-to-workspace 8; }
+    // Mod+Ctrl+9 { move-column-to-workspace 9; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
@@ -591,28 +593,26 @@ binds {
     // Mod+R { switch-preset-column-width; }
     // Cycling through the presets in reverse order is also possible.
     // Mod+R { switch-preset-column-width-back; }
-    Mod+Shift+R { switch-preset-window-height; }
-    Mod+Ctrl+R { reset-window-height; }
+    // Mod+Shift+R { switch-preset-window-height; }
+    // Mod+Ctrl+R { reset-window-height; }
     Mod+Ctrl+F { fullscreen-window; }
-    Mod+Shift+Up { switch-preset-column-width; }
-    Mod+Shift+Down { switch-preset-column-width-back; }
-    Mod+Shift+4 { screenshot; }
+    Ctrl+Shift+Up { switch-preset-column-width; }
+    Ctrl+Shift+Down { switch-preset-column-width-back; }
+    Ctrl+Shift+4 { screenshot; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
     Ctrl+Shift+F { expand-column-to-available-width; }
 
-    // Use Mac CMD as Ctrl
-    Mod+A { spawn-sh "wtype -M ctrl -k a"; }
-    Mod+C { spawn-sh "wtype -M ctrl -k c"; }
-    Mod+D { spawn-sh "wtype -M ctrl -k d"; }
-    Mod+F { spawn-sh "wtype -M ctrl -k f"; }
-    Mod+R { spawn-sh "wtype -M ctrl -k r"; }
-    Mod+T { spawn-sh "wtype -M ctrl -k t"; }
-    Mod+V { spawn-sh "wtype -M ctrl -k v"; }
-    Mod+W { spawn-sh "wtype -M ctrl -k w"; }
-    Mod+X { spawn-sh "wtype -M ctrl -k x"; }
-    Mod+Z { spawn-sh "wtype -M ctrl -k z"; }
+    // Type cutom keys
+    Alt+5 { spawn-sh "wtype -M shift -k bracketleft -m shift"; }   // for [
+    Alt+6 { spawn-sh "wtype -M shift -k bracketright -m shift"; }  // for ]
+    Alt+7 { spawn-sh "wtype -k bar"; }                            // for |
+    Alt+8 { spawn-sh "wtype -k braceleft"; }                      // for {
+    Alt+9 { spawn-sh "wtype -k braceright"; }                     // for }
+    Alt+n { spawn-sh "wtype -k asciitilde"; }                     // for ~
+    Alt+l { spawn-sh "wtype -k at"; }                             // for @
+    // Mod+A { spawn-sh "wtype -M ctrl -k a"; }                    // for Ctrl + A
 
     // Center all fully visible columns on screen.
     Mod+Ctrl+C { center-visible-columns; }
@@ -661,7 +661,7 @@ binds {
     // so they may, for example, forward the key presses as-is to a remote machine.
     // It's a good idea to bind an escape hatch to toggle the inhibitor,
     // so a buggy application can't hold your session hostage.
-    //
+    
     // The allow-inhibiting=false property can be applied to other binds as well,
     // which ensures niri always processes them, even when an inhibitor is active.
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
