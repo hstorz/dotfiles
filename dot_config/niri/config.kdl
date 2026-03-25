@@ -439,7 +439,7 @@ binds {
     // or do a four-finger swipe up on a touchpad.
     Alt+Shift+O repeat=false { toggle-overview; }
 
-    Mod+Q repeat=false { close-window; }
+    Ctrl+Q repeat=false { close-window; }
 
     Ctrl+Left  { focus-column-left; }
     Ctrl+Down  { focus-window-down; }
