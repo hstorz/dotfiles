@@ -49,7 +49,7 @@
       "id" : "switchWorkspace.0"
     },
     {
-      "binding" : "Shift+Command+Left Arrow",
+      "binding" : "Option+Shift+Left Arrow",
       "id" : "moveToWorkspace.0"
     },
     {
@@ -57,7 +57,7 @@
       "id" : "switchWorkspace.1"
     },
     {
-      "binding" : "Shift+Command+Right Arrow",
+      "binding" : "Option+Shift+Right Arrow",
       "id" : "moveToWorkspace.1"
     },
     {
@@ -177,11 +177,11 @@
       "id" : "toggleFullscreen"
     },
     {
-      "binding" : "Option+Left Arrow",
+      "binding" : "Shift+Command+Left Arrow",
       "id" : "moveColumn.left"
     },
     {
-      "binding" : "Option+Right Arrow",
+      "binding" : "Shift+Command+Right Arrow",
       "id" : "moveColumn.right"
     },
     {
