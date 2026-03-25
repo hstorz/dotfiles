@@ -6,8 +6,10 @@ background = black
 cursor-style = bar
 cursor-style-blink = true
 
-# Key bindings for common actions
-keybind = ctrl+n=new_window
+{{ if eq .chezmoi.os "linux" -}}
+    # Key bindings (linux-specific)
+    config-file = keybinds.ghostty
+{{ end }}
 
 # Disable quit confirmation dialog
 confirm-close-surface = false
