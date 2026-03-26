@@ -609,14 +609,14 @@ binds {
     Ctrl+Shift+F { expand-column-to-available-width; }
 
     // Type cutom keys
-    Alt+5 { spawn-sh "wtype -M shift -k bracketleft -m shift"; }   // for [
-    Alt+6 { spawn-sh "wtype -M shift -k bracketright -m shift"; }  // for ]
+    Alt+5 { spawn-sh "wtype -M shift -k bracketleft -m shift"; }  // for [
+    Alt+6 { spawn-sh "wtype -M shift -k bracketright -m shift"; } // for ]
     Alt+7 { spawn-sh "wtype -k bar"; }                            // for |
     Alt+8 { spawn-sh "wtype -k braceleft"; }                      // for {
     Alt+9 { spawn-sh "wtype -k braceright"; }                     // for }
     Alt+n { spawn-sh "wtype -k asciitilde"; }                     // for ~
     Alt+l { spawn-sh "wtype -k at"; }                             // for @
-    // Mod+A { spawn-sh "wtype -M ctrl -k a"; }                    // for Ctrl + A
+    // Mod+A { spawn-sh "wtype -M ctrl -k a"; }                   // for Ctrl + A
 
     // Center all fully visible columns on screen.
     Mod+Ctrl+C { center-visible-columns; }
