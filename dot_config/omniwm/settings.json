@@ -49,7 +49,7 @@
       "id" : "switchWorkspace.0"
     },
     {
-      "binding" : "Option+Shift+Left Arrow",
+      "binding" : "Unassigned",
       "id" : "moveToWorkspace.0"
     },
     {
@@ -57,7 +57,7 @@
       "id" : "switchWorkspace.1"
     },
     {
-      "binding" : "Option+Shift+Right Arrow",
+      "binding" : "Unassigned",
       "id" : "moveToWorkspace.1"
     },
     {
@@ -117,12 +117,8 @@
       "id" : "moveToWorkspace.8"
     },
     {
-      "binding" : "Option+Shift+Up Arrow",
+      "binding" : "Unassigned",
       "id" : "workspaceBackAndForth"
-    },
-    {
-      "binding" : "Option+Shift+Down Arrow",
-      "id" : "switchWorkspace.next"
     },
     {
       "binding" : "Command+Left Arrow",
@@ -157,6 +153,14 @@
       "id" : "moveColumnToWorkspaceDown"
     },
     {
+      "binding" : "Option+Command+Left Arrow",
+      "id" : "moveColumnToWorkspace.0"
+    },
+    {
+      "binding" : "Option+Command+Right Arrow",
+      "id" : "moveColumnToWorkspace.1"
+    },
+    {
       "binding" : "Option+Shift+Command+Left Arrow",
       "id" : "move.left"
     },
@@ -171,6 +175,14 @@
     {
       "binding" : "Option+Shift+Command+Right Arrow",
       "id" : "move.right"
+    },
+    {
+      "binding" : "Option+Command+Tab",
+      "id" : "focusMonitorNext"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "focusMonitorLast"
     },
     {
       "binding" : "Unassigned",
@@ -297,7 +309,7 @@
   "workspaceBarHideEmptyWorkspaces" : true,
   "workspaceBarNotchAware" : false,
   "workspaceBarShowLabels" : false,
-  "workspaceBarWindowLevel" : "status",
+  "workspaceBarWindowLevel" : "screensaver",
   "workspaceBarXOffset" : -240,
   "workspaceConfigurations" : [
     {
