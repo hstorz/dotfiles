@@ -320,6 +320,7 @@
         "onlySameOutput": true,
         "pinnedApps": [
             "org.gnome.Nautilus",
+            "com.mitchellh.ghostty",
             "brave-browser",
             "code",
             "brave-kblpdimlnpcclpeegedgiighibgjmlff-Default",
