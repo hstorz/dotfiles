@@ -50,7 +50,7 @@
       "id" : "switchWorkspace.0"
     },
     {
-      "binding" : "Control+Option+Left Arrow",
+      "binding" : "Option+Command+Left Arrow",
       "id" : "moveToWorkspace.0"
     },
     {
@@ -58,7 +58,7 @@
       "id" : "switchWorkspace.1"
     },
     {
-      "binding" : "Control+Option+Right Arrow",
+      "binding" : "Option+Command+Right Arrow",
       "id" : "moveToWorkspace.1"
     },
     {
@@ -158,19 +158,19 @@
       "id" : "moveColumnToWorkspaceDown"
     },
     {
-      "binding" : "Option+Command+Left Arrow",
+      "binding" : "Control+Option+Left Arrow",
       "id" : "move.left"
     },
     {
-      "binding" : "Option+Command+Down Arrow",
+      "binding" : "Control+Option+Down Arrow",
       "id" : "move.down"
     },
     {
-      "binding" : "Option+Command+Up Arrow",
+      "binding" : "Control+Option+Up Arrow",
       "id" : "move.up"
     },
     {
-      "binding" : "Option+Command+Right Arrow",
+      "binding" : "Control+Option+Right Arrow",
       "id" : "move.right"
     },
     {
@@ -269,7 +269,7 @@
       "id" : "raiseAllFloatingWindows"
     },
     {
-      "binding" : "Control+Option+Up Arrow",
+      "binding" : "Option+Command+Up Arrow",
       "id" : "toggleFocusedWindowFloating"
     },
     {
