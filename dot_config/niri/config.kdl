@@ -10,6 +10,15 @@ gestures {
     }
 }
 
+// Show all windows of focused application
+recent-windows {
+    binds {
+        Mod+Down { next-window filter="app-id"; }
+        Ctrl+Tab { next-window; }
+        Ctrl+Shift+Tab { previous-window; }
+    }
+}
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
@@ -442,7 +451,6 @@ binds {
     // or do a four-finger swipe up on a touchpad.
     Alt+Shift+O repeat=false { toggle-overview; }
     Mod+Up repeat=false { toggle-overview; }
-    Mod+Down repeat=false { toggle-overview; }
 
     Ctrl+Q repeat=false { close-window; }
 
