@@ -43,13 +43,14 @@
   "commandPaletteLastMode" : "menu",
   "dwindleSingleWindowAspectRatio" : "fill",
   "gapSize" : 4,
+  "gestureFingerCount" : 4,
   "hotkeyBindings" : [
     {
       "binding" : "Unassigned",
       "id" : "switchWorkspace.0"
     },
     {
-      "binding" : "Unassigned",
+      "binding" : "Control+Option+Left Arrow",
       "id" : "moveToWorkspace.0"
     },
     {
@@ -57,7 +58,7 @@
       "id" : "switchWorkspace.1"
     },
     {
-      "binding" : "Unassigned",
+      "binding" : "Control+Option+Right Arrow",
       "id" : "moveToWorkspace.1"
     },
     {
@@ -121,6 +122,10 @@
       "id" : "workspaceBackAndForth"
     },
     {
+      "binding" : "Control+Option+Shift+Tab",
+      "id" : "switchWorkspace.next"
+    },
+    {
       "binding" : "Command+Left Arrow",
       "id" : "focus.left"
     },
@@ -154,14 +159,6 @@
     },
     {
       "binding" : "Option+Command+Left Arrow",
-      "id" : "moveColumnToWorkspace.0"
-    },
-    {
-      "binding" : "Option+Command+Right Arrow",
-      "id" : "moveColumnToWorkspace.1"
-    },
-    {
-      "binding" : "Option+Shift+Command+Left Arrow",
       "id" : "move.left"
     },
     {
@@ -173,11 +170,11 @@
       "id" : "move.up"
     },
     {
-      "binding" : "Option+Shift+Command+Right Arrow",
+      "binding" : "Option+Command+Right Arrow",
       "id" : "move.right"
     },
     {
-      "binding" : "Option+Command+Tab",
+      "binding" : "Control+Option+Tab",
       "id" : "focusMonitorNext"
     },
     {
@@ -189,11 +186,11 @@
       "id" : "toggleFullscreen"
     },
     {
-      "binding" : "Control+Shift+Left Arrow",
+      "binding" : "Control+Left Arrow",
       "id" : "moveColumn.left"
     },
     {
-      "binding" : "Control+Shift+Right Arrow",
+      "binding" : "Control+Right Arrow",
       "id" : "moveColumn.right"
     },
     {
@@ -257,7 +254,7 @@
       "id" : "toggleColumnFullWidth"
     },
     {
-      "binding" : "Shift+Command+Down Arrow",
+      "binding" : "Option+Shift+Command+Down Arrow",
       "id" : "balanceSizes"
     },
     {
@@ -272,8 +269,20 @@
       "id" : "raiseAllFloatingWindows"
     },
     {
-      "binding" : "Option+Shift+T",
+      "binding" : "Control+Option+Up Arrow",
+      "id" : "toggleFocusedWindowFloating"
+    },
+    {
+      "binding" : "Unassigned",
       "id" : "toggleQuakeTerminal"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "toggleWorkspaceLayout"
+    },
+    {
+      "binding" : "Control+Up Arrow",
+      "id" : "toggleOverview"
     }
   ],
   "monitorBarSettings" : [
@@ -283,6 +292,12 @@
       "monitorName" : "SAMSUNG",
       "windowLevel" : "status",
       "xOffset" : 0
+    },
+    {
+      "id" : "186BE6C8-6861-4C72-B628-B86882B813C8",
+      "monitorDisplayId" : 3,
+      "monitorName" : "SAMSUNG",
+      "windowLevel" : "status"
     }
   ],
   "mouseWarpMonitorOrder" : [
@@ -303,13 +318,15 @@
   "outerGapLeft" : 0,
   "outerGapRight" : 0,
   "outerGapTop" : 0,
-  "scrollSensitivity" : 10,
+  "quakeTerminalEnabled" : false,
+  "scrollGestureEnabled" : false,
+  "scrollSensitivity" : 12.5,
   "version" : 4,
   "workspaceBarBackgroundOpacity" : 0,
   "workspaceBarHideEmptyWorkspaces" : true,
   "workspaceBarNotchAware" : false,
   "workspaceBarShowLabels" : false,
-  "workspaceBarWindowLevel" : "screensaver",
+  "workspaceBarWindowLevel" : "normal",
   "workspaceBarXOffset" : -240,
   "workspaceConfigurations" : [
     {
