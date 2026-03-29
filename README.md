@@ -14,5 +14,5 @@
 
 ### Harmonize goal:
      - Same window management
-     - Same shortcuts
-     - Same terminal
+     - Same keyboard shortcuts
+     - Same terminal tools
