@@ -34,13 +34,27 @@
       "assignToWorkspace" : "1",
       "bundleId" : "com.mitchellh.ghostty",
       "id" : "DF7B0DFA-0F31-4D4F-A8EB-4CEBC7366EB7"
+    },
+    {
+      "assignToWorkspace" : "2",
+      "bundleId" : "com.google.Chrome",
+      "id" : "259CF4F4-5297-4C01-BF7A-4AD8CD30A71C"
+    },
+    {
+      "assignToWorkspace" : "2",
+      "bundleId" : "com.apple.Safari",
+      "id" : "E6BDC131-917B-4C94-9A18-4A1D6A9106AA"
+    },
+    {
+      "assignToWorkspace" : "2",
+      "bundleId" : "com.apple.Safari.WebApp.F22BFFFC-7316-47CB-8B03-DFCAC5F8D4F8",
+      "id" : "27849C6C-5243-4DE4-9092-5E60C2D8E100"
     }
   ],
   "borderColorBlue" : 0.93095942554955757,
   "borderColorRed" : 0.94039334886199455,
   "bordersEnabled" : false,
   "borderWidth" : 1,
-  "commandPaletteLastMode" : "menu",
   "dwindleSingleWindowAspectRatio" : "fill",
   "gapSize" : 4,
   "gestureFingerCount" : 4,
@@ -306,9 +320,11 @@
   ],
   "niriAlwaysCenterSingleColumn" : false,
   "niriColumnWidthPresets" : [
+    0.14999999999999999,
     0.33000000000000002,
     0.5,
     0.66000000000000003,
+    0.84999999999999998,
     1
   ],
   "niriDefaultColumnWidth" : 0.5,
@@ -326,7 +342,7 @@
   "workspaceBarHideEmptyWorkspaces" : true,
   "workspaceBarNotchAware" : false,
   "workspaceBarShowLabels" : false,
-  "workspaceBarWindowLevel" : "normal",
+  "workspaceBarWindowLevel" : "floating",
   "workspaceBarXOffset" : -240,
   "workspaceConfigurations" : [
     {
