@@ -2,7 +2,11 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export HOMEBREW_NO_ENV_HINTS=1
 export EDITOR="code"
 
+# Load starship
 eval "$(starship init zsh)"
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # Source brew zsh files 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
