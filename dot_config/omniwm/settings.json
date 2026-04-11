@@ -506,7 +506,7 @@
   "workspaceBarShowFloatingWindows" : false,
   "workspaceBarShowLabels" : false,
   "workspaceBarWindowLevel" : "status",
-  "workspaceBarXOffset" : 20,
+  "workspaceBarXOffset" : 0,
   "workspaceBarYOffset" : 10,
   "workspaceConfigurations" : [
     {
