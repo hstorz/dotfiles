@@ -1,63 +1,43 @@
 {
+  "animationsEnabled" : true,
   "appRules" : [
     {
-      "assignToWorkspace" : "2",
-      "bundleId" : "com.microsoft.teams2",
-      "id" : "05C3ABEF-B342-4DF7-B5DD-B2012BAE71BF"
+      "bundleId" : "com.eltima.cmd1.mas",
+      "id" : "CFD90783-2DE2-42D0-BD19-E762FDF8DF3F",
+      "layout" : "tile"
     },
     {
-      "assignToWorkspace" : "2",
-      "bundleId" : "com.google.Chrome.app.cifhbcnohmdccbgoicgdjpfamggdegmo",
-      "id" : "F215ABCF-035A-4488-BAE6-A52D53F380A3"
+      "bundleId" : "com.apple.systempreferences",
+      "id" : "77FA962C-1E4F-4670-B78B-5CA4545DD138",
+      "layout" : "tile"
     },
     {
-      "assignToWorkspace" : "2",
-      "bundleId" : "com.sourcegit-scm.sourcegit",
-      "id" : "C246716F-09CF-4336-8B14-453BF54D63B2"
-    },
-    {
-      "assignToWorkspace" : "2",
-      "bundleId" : "com.reactotron.app",
-      "id" : "49D856F0-1310-49D0-AF62-A3507E284596"
-    },
-    {
-      "assignToWorkspace" : "1",
-      "bundleId" : "com.microsoft.VSCode",
-      "id" : "52C1A591-9D84-46EA-A122-AA781E4834DC"
-    },
-    {
-      "assignToWorkspace" : "1",
-      "bundleId" : "com.cmuxterm.app",
-      "id" : "F0F2D7DA-8238-4208-BABD-0AFF96798E5D"
-    },
-    {
-      "assignToWorkspace" : "1",
-      "bundleId" : "com.mitchellh.ghostty",
-      "id" : "DF7B0DFA-0F31-4D4F-A8EB-4CEBC7366EB7"
-    },
-    {
-      "assignToWorkspace" : "2",
-      "bundleId" : "com.google.Chrome",
-      "id" : "259CF4F4-5297-4C01-BF7A-4AD8CD30A71C"
-    },
-    {
-      "assignToWorkspace" : "2",
-      "bundleId" : "com.apple.Safari",
-      "id" : "E6BDC131-917B-4C94-9A18-4A1D6A9106AA"
-    },
-    {
-      "assignToWorkspace" : "2",
-      "bundleId" : "com.apple.Safari.WebApp.F22BFFFC-7316-47CB-8B03-DFCAC5F8D4F8",
-      "id" : "27849C6C-5243-4DE4-9092-5E60C2D8E100"
+      "bundleId" : "com.apple.activitymonitor",
+      "id" : "93C06645-3E27-41B5-9FC9-A69B86EB2D3D",
+      "layout" : "tile"
     }
   ],
-  "borderColorBlue" : 0.93095942554955757,
-  "borderColorRed" : 0.94039334886199455,
-  "bordersEnabled" : false,
+  "appearanceMode" : "dark",
+  "borderColorAlpha" : 1,
+  "borderColorBlue" : 0.9309594255495576,
+  "borderColorGreen" : 1,
+  "borderColorRed" : 0.9403933488619945,
   "borderWidth" : 1,
+  "bordersEnabled" : false,
+  "commandPaletteLastMode" : "windows",
+  "defaultLayoutType" : "niri",
+  "dwindleDefaultSplitRatio" : 1,
+  "dwindleMoveToRootStable" : true,
   "dwindleSingleWindowAspectRatio" : "fill",
+  "dwindleSmartSplit" : false,
+  "dwindleSplitWidthMultiplier" : 1,
+  "dwindleUseGlobalGaps" : true,
+  "focusFollowsMouse" : false,
+  "focusFollowsWindowToMonitor" : false,
   "gapSize" : 4,
   "gestureFingerCount" : 4,
+  "gestureInvertDirection" : true,
+  "hiddenBarIsCollapsed" : true,
   "hotkeyBindings" : [
     {
       "binding" : "Unassigned",
@@ -140,6 +120,10 @@
       "id" : "switchWorkspace.next"
     },
     {
+      "binding" : "Unassigned",
+      "id" : "switchWorkspace.previous"
+    },
+    {
       "binding" : "Command+Left Arrow",
       "id" : "focus.left"
     },
@@ -156,6 +140,18 @@
       "id" : "focus.right"
     },
     {
+      "binding" : "Option+Tab",
+      "id" : "focusPrevious"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "focusDownOrLeft"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "focusUpOrRight"
+    },
+    {
       "binding" : "Unassigned",
       "id" : "moveWindowToWorkspaceUp"
     },
@@ -170,6 +166,42 @@
     {
       "binding" : "Unassigned",
       "id" : "moveColumnToWorkspaceDown"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspace.0"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspace.1"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspace.2"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspace.3"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspace.4"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspace.5"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspace.6"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspace.7"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "moveColumnToWorkspace.8"
     },
     {
       "binding" : "Control+Option+Left Arrow",
@@ -193,11 +225,19 @@
     },
     {
       "binding" : "Unassigned",
+      "id" : "focusMonitorPrevious"
+    },
+    {
+      "binding" : "Unassigned",
       "id" : "focusMonitorLast"
     },
     {
       "binding" : "Unassigned",
       "id" : "toggleFullscreen"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "toggleNativeFullscreen"
     },
     {
       "binding" : "Control+Left Arrow",
@@ -272,6 +312,70 @@
       "id" : "balanceSizes"
     },
     {
+      "binding" : "Unassigned",
+      "id" : "moveToRoot"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "toggleSplit"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "swapSplit"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "resizeGrow.left"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "resizeGrow.right"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "resizeGrow.up"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "resizeGrow.down"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "resizeShrink.left"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "resizeShrink.right"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "resizeShrink.up"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "resizeShrink.down"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "preselect.left"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "preselect.right"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "preselect.up"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "preselect.down"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "preselectClear"
+    },
+    {
       "binding" : "Control+Tab",
       "id" : "openCommandPalette"
     },
@@ -283,8 +387,32 @@
       "id" : "raiseAllFloatingWindows"
     },
     {
+      "binding" : "Unassigned",
+      "id" : "rescueOffscreenWindows"
+    },
+    {
       "binding" : "Option+Command+Up Arrow",
       "id" : "toggleFocusedWindowFloating"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "assignFocusedWindowToScratchpad"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "toggleScratchpadWindow"
+    },
+    {
+      "binding" : "Control+Option+M",
+      "id" : "openMenuAnywhere"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "toggleWorkspaceBarVisibility"
+    },
+    {
+      "binding" : "Unassigned",
+      "id" : "toggleHiddenBar"
     },
     {
       "binding" : "Unassigned",
@@ -299,51 +427,87 @@
       "id" : "toggleOverview"
     }
   ],
+  "hotkeysEnabled" : true,
+  "ipcEnabled" : false,
   "monitorBarSettings" : [
     {
       "id" : "BAC52A98-AE2A-45CE-9D09-28692125A05A",
-      "monitorDisplayId" : 5,
       "monitorName" : "SAMSUNG",
       "windowLevel" : "status",
       "xOffset" : 0
     },
     {
       "id" : "186BE6C8-6861-4C72-B628-B86882B813C8",
-      "monitorDisplayId" : 3,
       "monitorName" : "SAMSUNG",
       "windowLevel" : "status"
     }
   ],
+  "monitorDwindleSettings" : [
+
+  ],
+  "monitorNiriSettings" : [
+
+  ],
+  "monitorOrientationSettings" : [
+
+  ],
+  "mouseWarpAxis" : "horizontal",
+  "mouseWarpMargin" : 1,
   "mouseWarpMonitorOrder" : [
     "SAMSUNG",
     "Built-in Retina Display"
   ],
+  "moveMouseToFocusedWindow" : false,
   "niriAlwaysCenterSingleColumn" : false,
+  "niriCenterFocusedColumn" : "never",
   "niriColumnWidthPresets" : [
-    0.14999999999999999,
-    0.33000000000000002,
+    0.15,
+    0.33,
     0.5,
-    0.66000000000000003,
-    0.84999999999999998,
+    0.66,
+    0.85,
     1
   ],
   "niriDefaultColumnWidth" : 0.5,
+  "niriInfiniteLoop" : false,
+  "niriMaxVisibleColumns" : 2,
   "niriMaxWindowsPerColumn" : 2,
   "niriSingleWindowAspectRatio" : "none",
   "outerGapBottom" : 0,
   "outerGapLeft" : 0,
   "outerGapRight" : 0,
   "outerGapTop" : 0,
+  "preventSleepEnabled" : false,
+  "quakeTerminalAnimationDuration" : 0.2,
+  "quakeTerminalAutoHide" : false,
   "quakeTerminalEnabled" : false,
+  "quakeTerminalHeightPercent" : 50,
+  "quakeTerminalMonitorMode" : "focusedWindow",
+  "quakeTerminalOpacity" : 1,
+  "quakeTerminalPosition" : "center",
+  "quakeTerminalUseCustomFrame" : false,
+  "quakeTerminalWidthPercent" : 50,
   "scrollGestureEnabled" : false,
+  "scrollModifierKey" : "optionShift",
   "scrollSensitivity" : 12.5,
+  "statusBarShowAppNames" : false,
+  "statusBarShowWorkspaceName" : false,
+  "statusBarUseWorkspaceId" : false,
+  "updateChecksEnabled" : true,
   "version" : 4,
   "workspaceBarBackgroundOpacity" : 0,
+  "workspaceBarDeduplicateAppIcons" : false,
+  "workspaceBarEnabled" : true,
+  "workspaceBarHeight" : 20,
   "workspaceBarHideEmptyWorkspaces" : true,
-  "workspaceBarNotchAware" : false,
+  "workspaceBarNotchAware" : true,
+  "workspaceBarPosition" : "overlappingMenuBar",
+  "workspaceBarReserveLayoutSpace" : false,
+  "workspaceBarShowFloatingWindows" : false,
   "workspaceBarShowLabels" : false,
-  "workspaceBarWindowLevel" : "floating",
-  "workspaceBarXOffset" : -240,
+  "workspaceBarWindowLevel" : "status",
+  "workspaceBarXOffset" : 20,
+  "workspaceBarYOffset" : 10,
   "workspaceConfigurations" : [
     {
       "id" : "AD36F001-C57E-41A5-AC1D-DF5249D007F0",
@@ -357,11 +521,7 @@
       "id" : "DDB74341-18D7-4038-85AC-C9AD77F22DBE",
       "layoutType" : "niri",
       "monitorAssignment" : {
-        "output" : {
-          "displayId" : 1,
-          "name" : "Built-in Retina Display"
-        },
-        "type" : "specificDisplay"
+        "type" : "secondary"
       },
       "name" : "2"
     }
