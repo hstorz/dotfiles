@@ -140,7 +140,7 @@
       "id" : "focus.right"
     },
     {
-      "binding" : "Option+Tab",
+      "binding" : "Control+Tab",
       "id" : "focusPrevious"
     },
     {
@@ -376,7 +376,7 @@
       "id" : "preselectClear"
     },
     {
-      "binding" : "Control+Tab",
+      "binding" : "Option+Tab",
       "id" : "openCommandPalette"
     },
     {
