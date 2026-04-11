@@ -497,7 +497,7 @@
   "version" : 4,
   "workspaceBarBackgroundOpacity" : 0,
   "workspaceBarDeduplicateAppIcons" : false,
-  "workspaceBarEnabled" : true,
+  "workspaceBarEnabled" : false,
   "workspaceBarHeight" : 20,
   "workspaceBarHideEmptyWorkspaces" : true,
   "workspaceBarNotchAware" : true,
