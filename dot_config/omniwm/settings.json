@@ -220,7 +220,7 @@
       "id" : "move.right"
     },
     {
-      "binding" : "Control+Option+Tab",
+      "binding" : "Option+Command+Tab",
       "id" : "focusMonitorNext"
     },
     {
@@ -432,12 +432,14 @@
   "monitorBarSettings" : [
     {
       "id" : "BAC52A98-AE2A-45CE-9D09-28692125A05A",
+      "monitorDisplayId" : 4,
       "monitorName" : "SAMSUNG",
       "windowLevel" : "status",
       "xOffset" : 0
     },
     {
       "id" : "186BE6C8-6861-4C72-B628-B86882B813C8",
+      "monitorDisplayId" : 4,
       "monitorName" : "SAMSUNG",
       "windowLevel" : "status"
     }
@@ -495,16 +497,25 @@
   "statusBarUseWorkspaceId" : false,
   "updateChecksEnabled" : true,
   "version" : 4,
+  "workspaceBarAccentColorAlpha" : 1,
+  "workspaceBarAccentColorBlue" : -1,
+  "workspaceBarAccentColorGreen" : -1,
+  "workspaceBarAccentColorRed" : -1,
   "workspaceBarBackgroundOpacity" : 0,
   "workspaceBarDeduplicateAppIcons" : false,
   "workspaceBarEnabled" : false,
   "workspaceBarHeight" : 20,
   "workspaceBarHideEmptyWorkspaces" : true,
+  "workspaceBarLabelFontSize" : 12,
   "workspaceBarNotchAware" : true,
   "workspaceBarPosition" : "overlappingMenuBar",
   "workspaceBarReserveLayoutSpace" : false,
   "workspaceBarShowFloatingWindows" : false,
   "workspaceBarShowLabels" : false,
+  "workspaceBarTextColorAlpha" : 1,
+  "workspaceBarTextColorBlue" : -1,
+  "workspaceBarTextColorGreen" : -1,
+  "workspaceBarTextColorRed" : -1,
   "workspaceBarWindowLevel" : "status",
   "workspaceBarXOffset" : 0,
   "workspaceBarYOffset" : 10,
