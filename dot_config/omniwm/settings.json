@@ -15,6 +15,11 @@
       "bundleId" : "com.apple.activitymonitor",
       "id" : "93C06645-3E27-41B5-9FC9-A69B86EB2D3D",
       "layout" : "tile"
+    },
+    {
+      "bundleId" : "com.apple.iphonesimulator",
+      "id" : "49328CBA-C8E4-4C29-A2C6-171A59422417",
+      "layout" : "float"
     }
   ],
   "appearanceMode" : "dark",
