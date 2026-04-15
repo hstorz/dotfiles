@@ -13,6 +13,7 @@ alias l="lazygit"
 alias m="micro"
 alias o="opencode"
 alias docker="podman"
+alias pod="devcontainer"
 
 # biome alias
 alias b="biome check --write ."

@@ -1,3 +1,4 @@
+export PATH="$HOME/.devcontainers/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
 export HOMEBREW_NO_ENV_HINTS=1
 export EDITOR="code"
