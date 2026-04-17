@@ -371,7 +371,7 @@ window-rule {
 binds {
     // ------ Custom binds start ------
     
-    Ctrl+Return { spawn "ghostty"; }
+    Ctrl+Al+Return { spawn "ghostty"; }
     Ctrl+Alt+1 { spawn "nautilus"; }
     Ctrl+Alt+2 { spawn "code"; }
     Ctrl+Alt+3 { spawn "OpenCode"; }
