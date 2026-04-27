@@ -1,4 +1,3 @@
-monitorBarOverrides = []
 monitorDwindleOverrides = []
 monitorNiriOverrides = []
 monitorOrientationOverrides = []
@@ -31,13 +30,13 @@ followsWindowToMonitor = false
 moveMouseToFocusedWindow = false
 
 [gaps]
-size = 4.0
+size = 8.0
 
 [gaps.outer]
-bottom = 4.0
-left = 4.0
-right = 4.0
-top = 4.0
+bottom = 8.0
+left = 8.0
+right = 8.0
+top = 8.0
 
 [general]
 animationsEnabled = true
@@ -59,6 +58,10 @@ axis = "horizontal"
 margin = 1
 
 [[mouseWarp.monitorOrder]]
+displayId = 5
+name = "SAMSUNG"
+
+[[mouseWarp.monitorOrder]]
 displayId = 1
 name = "Built-in Retina Display"
 
@@ -69,7 +72,7 @@ columnWidthPresets = [0.3333333333333333, 0.5, 0.66]
 infiniteLoop = false
 maxVisibleColumns = 2
 maxWindowsPerColumn = 2
-singleWindowAspectRatio = "4:3"
+singleWindowAspectRatio = "none"
 
 [quakeTerminal]
 animationDuration = 0.2
@@ -95,7 +98,7 @@ useWorkspaceId = false
 backgroundOpacity = 0.1
 deduplicateAppIcons = false
 enabled = true
-height = 20.0
+height = 24.0
 hideEmptyWorkspaces = false
 labelFontSize = 12.0
 notchAware = true
@@ -130,7 +133,6 @@ assignToWorkspace = "2"
 bundleId = "com.microsoft.VSCode"
 id = "01C03EC4-8935-41C8-9BF3-3E9732A51FCB"
 layout = "tile"
-minWidth = 1912.0
 
 [[appRules]]
 assignToWorkspace = "3"
@@ -190,6 +192,36 @@ layout = "tile"
 assignToWorkspace = "4"
 bundleId = "com.brave.Browser"
 id = "1C8C13B4-02C9-4582-B686-97736AC3A039"
+layout = "tile"
+
+[[appRules]]
+assignToWorkspace = "5"
+bundleId = "com.microsoft.teams2"
+id = "902F864D-DBAD-4F79-9BA5-0F4066D0FC05"
+layout = "tile"
+
+[[appRules]]
+assignToWorkspace = "5"
+bundleId = "com.google.Chrome.app.cifhbcnohmdccbgoicgdjpfamggdegmo"
+id = "A95950EE-339C-4C53-974B-8DA76D36FEE2"
+layout = "tile"
+
+[[appRules]]
+assignToWorkspace = "4"
+bundleId = "com.google.Chrome"
+id = "0D174E2E-0AE2-474E-A681-BE2E457E8B01"
+layout = "tile"
+
+[[appRules]]
+assignToWorkspace = "4"
+bundleId = "com.apple.Safari.WebApp.F22BFFFC-7316-47CB-8B03-DFCAC5F8D4F8"
+id = "8C54CFBC-EFDB-4A7B-AFC9-FEBC4EE5F855"
+layout = "tile"
+
+[[appRules]]
+assignToWorkspace = "4"
+bundleId = "com.apple.Safari.WebApp.0D9C8DEE-AE1A-4EB0-B84A-14BA4A046CDC"
+id = "B7681591-976F-4941-B08A-5DBB52A764A7"
 layout = "tile"
 
 [[hotkeys]]
@@ -461,7 +493,7 @@ binding = "Shift+Command+Up Arrow"
 id = "toggleColumnFullWidth"
 
 [[hotkeys]]
-binding = "Option+Shift+B"
+binding = "Shift+Command+Down Arrow"
 id = "balanceSizes"
 
 [[hotkeys]]
@@ -579,6 +611,12 @@ id = "toggleWorkspaceLayout"
 binding = "Control+Up Arrow"
 id = "toggleOverview"
 
+[[monitorBarOverrides]]
+id = "0F9ABB4B-E1B9-4247-9307-2907CA0AB285"
+monitorDisplayId = 5
+monitorName = "SAMSUNG"
+reserveLayoutSpace = false
+
 [[workspaces]]
 id = "AD36F001-C57E-41A5-AC1D-DF5249D007F0"
 layoutType = "niri"
@@ -609,7 +647,7 @@ layoutType = "niri"
 name = "4"
 
 [workspaces.monitorAssignment]
-type = "main"
+type = "secondary"
 
 [[workspaces]]
 id = "8FED6B60-DF56-41AB-BFE0-FBA4BB53FE5B"
