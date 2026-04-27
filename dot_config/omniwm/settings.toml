@@ -174,7 +174,7 @@ bundleId = "com.microsoft.edgemac"
 id = "D7B04F16-950E-4465-99F2-CF023ACFD2A3"
 
 [[appRules]]
-assignToWorkspace = "5"
+assignToWorkspace = "4"
 bundleId = "com.highcaffeinecontent.radio"
 id = "39FECBC7-5406-4132-BC65-7F9AD1859F5B"
 layout = "tile"
@@ -192,32 +192,9 @@ id = "1C8C13B4-02C9-4582-B686-97736AC3A039"
 layout = "tile"
 
 [[appRules]]
-assignToWorkspace = "5"
+assignToWorkspace = "4"
 bundleId = "com.microsoft.teams2"
 id = "902F864D-DBAD-4F79-9BA5-0F4066D0FC05"
-layout = "tile"
-
-[[appRules]]
-assignToWorkspace = "5"
-bundleId = "com.google.Chrome.app.cifhbcnohmdccbgoicgdjpfamggdegmo"
-id = "A95950EE-339C-4C53-974B-8DA76D36FEE2"
-layout = "tile"
-
-[[appRules]]
-assignToWorkspace = "4"
-bundleId = "com.google.Chrome"
-id = "0D174E2E-0AE2-474E-A681-BE2E457E8B01"
-
-[[appRules]]
-assignToWorkspace = "4"
-bundleId = "com.apple.Safari.WebApp.F22BFFFC-7316-47CB-8B03-DFCAC5F8D4F8"
-id = "8C54CFBC-EFDB-4A7B-AFC9-FEBC4EE5F855"
-layout = "tile"
-
-[[appRules]]
-assignToWorkspace = "4"
-bundleId = "com.apple.Safari.WebApp.0D9C8DEE-AE1A-4EB0-B84A-14BA4A046CDC"
-id = "B7681591-976F-4941-B08A-5DBB52A764A7"
 layout = "tile"
 
 [[appRules]]
@@ -228,10 +205,20 @@ layout = "tile"
 
 [[appRules]]
 assignToWorkspace = "3"
-axRole = "AXWindow"
-axSubrole = "AXStandardWindow"
 bundleId = "com.sourcegit-scm.sourcegit"
 id = "03A58F6F-B779-4DEE-8F6C-FB2216A7C1FF"
+layout = "tile"
+
+[[appRules]]
+assignToWorkspace = "4"
+bundleId = "com.reactotron.app"
+id = "89DA6D53-F470-43CD-A5B5-08D14C110B53"
+layout = "tile"
+
+[[appRules]]
+assignToWorkspace = "4"
+bundleId = "com.google.Chrome.app.cifhbcnohmdccbgoicgdjpfamggdegmo"
+id = "19D25767-E2AA-454A-B49B-5872104AD5E1"
 layout = "tile"
 
 [[hotkeys]]
@@ -267,43 +254,43 @@ binding = "Option+Shift+4"
 id = "moveToWorkspace.3"
 
 [[hotkeys]]
-binding = "Option+5"
+binding = "Unassigned"
 id = "switchWorkspace.4"
 
 [[hotkeys]]
-binding = "Option+Shift+5"
+binding = "Unassigned"
 id = "moveToWorkspace.4"
 
 [[hotkeys]]
-binding = "Option+6"
+binding = "Unassigned"
 id = "switchWorkspace.5"
 
 [[hotkeys]]
-binding = "Option+Shift+6"
+binding = "Unassigned"
 id = "moveToWorkspace.5"
 
 [[hotkeys]]
-binding = "Option+7"
+binding = "Unassigned"
 id = "switchWorkspace.6"
 
 [[hotkeys]]
-binding = "Option+Shift+7"
+binding = "Unassigned"
 id = "moveToWorkspace.6"
 
 [[hotkeys]]
-binding = "Option+8"
+binding = "Unassigned"
 id = "switchWorkspace.7"
 
 [[hotkeys]]
-binding = "Option+Shift+8"
+binding = "Unassigned"
 id = "moveToWorkspace.7"
 
 [[hotkeys]]
-binding = "Option+9"
+binding = "Unassigned"
 id = "switchWorkspace.8"
 
 [[hotkeys]]
-binding = "Option+Shift+9"
+binding = "Unassigned"
 id = "moveToWorkspace.8"
 
 [[hotkeys]]
@@ -660,14 +647,6 @@ type = "main"
 id = "248AA883-2261-4D45-943C-79C0E46A232B"
 layoutType = "niri"
 name = "4"
-
-[workspaces.monitorAssignment]
-type = "secondary"
-
-[[workspaces]]
-id = "8B8C45D6-CE9E-41D9-BD50-BE4989D5E3DE"
-layoutType = "niri"
-name = "5"
 
 [workspaces.monitorAssignment]
 type = "secondary"
