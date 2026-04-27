@@ -207,7 +207,6 @@ layout = "tile"
 assignToWorkspace = "3"
 bundleId = "com.sourcegit-scm.sourcegit"
 id = "03A58F6F-B779-4DEE-8F6C-FB2216A7C1FF"
-layout = "tile"
 
 [[appRules]]
 assignToWorkspace = "4"
