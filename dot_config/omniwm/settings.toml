@@ -1,20 +1,20 @@
+monitorBarOverrides = []
 monitorDwindleOverrides = []
 monitorNiriOverrides = []
-monitorOrientationOverrides = []
 version = 5
 
 [appearance]
 mode = "dark"
 
 [borders]
-enabled = false
-width = 1.0
+enabled = true
+width = 5.0
 
 [borders.color]
 alpha = 1.0
-blue = 0.5086386203765869
-green = 0.4155111610889435
-red = 0.3130645155906677
+blue = 0.3294942080974579
+green = 0.3294942080974579
+red = 0.3168213539398634
 
 [dwindle]
 defaultSplitRatio = 1.0
@@ -49,9 +49,9 @@ updateChecksEnabled = true
 [gestures]
 fingerCount = 3
 invertDirection = true
-scrollEnabled = false
+scrollEnabled = true
 scrollModifierKey = "optionShift"
-scrollSensitivity = 43.7
+scrollSensitivity = 5.0
 
 [mouseWarp]
 axis = "horizontal"
@@ -71,8 +71,8 @@ centerFocusedColumn = "never"
 columnWidthPresets = [0.3333333333333333, 0.5, 0.66]
 infiniteLoop = false
 maxVisibleColumns = 2
-maxWindowsPerColumn = 2
-singleWindowAspectRatio = "none"
+maxWindowsPerColumn = 3
+singleWindowAspectRatio = "4:3"
 
 [quakeTerminal]
 animationDuration = 0.2
@@ -103,8 +103,8 @@ hideEmptyWorkspaces = false
 labelFontSize = 12.0
 notchAware = true
 position = "overlappingMenuBar"
-reserveLayoutSpace = true
-showFloatingWindows = true
+reserveLayoutSpace = false
+showFloatingWindows = false
 showLabels = true
 windowLevel = "popup"
 xOffset = 0.0
@@ -112,9 +112,9 @@ yOffset = 0.0
 
 [workspaceBar.accentColor]
 alpha = 1.0
-blue = 0.6710402369499207
-green = 0.6569697260856628
-red = 0.6359008550643921
+blue = -1.0
+green = -1.0
+red = -1.0
 
 [workspaceBar.textColor]
 alpha = 1.0
@@ -168,13 +168,11 @@ layout = "tile"
 assignToWorkspace = "4"
 bundleId = "com.apple.Safari"
 id = "F0302051-39EB-4241-80D4-AF56DED00360"
-layout = "tile"
 
 [[appRules]]
 assignToWorkspace = "4"
 bundleId = "com.microsoft.edgemac"
 id = "D7B04F16-950E-4465-99F2-CF023ACFD2A3"
-layout = "tile"
 
 [[appRules]]
 assignToWorkspace = "5"
@@ -210,7 +208,6 @@ layout = "tile"
 assignToWorkspace = "4"
 bundleId = "com.google.Chrome"
 id = "0D174E2E-0AE2-474E-A681-BE2E457E8B01"
-layout = "tile"
 
 [[appRules]]
 assignToWorkspace = "4"
@@ -611,11 +608,10 @@ id = "toggleWorkspaceLayout"
 binding = "Control+Up Arrow"
 id = "toggleOverview"
 
-[[monitorBarOverrides]]
-id = "0F9ABB4B-E1B9-4247-9307-2907CA0AB285"
+[[monitorOrientationOverrides]]
 monitorDisplayId = 5
 monitorName = "SAMSUNG"
-reserveLayoutSpace = false
+orientation = "horizontal"
 
 [[workspaces]]
 id = "AD36F001-C57E-41A5-AC1D-DF5249D007F0"
@@ -650,7 +646,7 @@ name = "4"
 type = "secondary"
 
 [[workspaces]]
-id = "8FED6B60-DF56-41AB-BFE0-FBA4BB53FE5B"
+id = "8B8C45D6-CE9E-41D9-BD50-BE4989D5E3DE"
 layoutType = "niri"
 name = "5"
 
