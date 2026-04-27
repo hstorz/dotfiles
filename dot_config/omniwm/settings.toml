@@ -1,4 +1,3 @@
-monitorBarOverrides = []
 monitorDwindleOverrides = []
 monitorNiriOverrides = []
 version = 5
@@ -7,7 +6,7 @@ version = 5
 mode = "dark"
 
 [borders]
-enabled = true
+enabled = false
 width = 5.0
 
 [borders.color]
@@ -71,7 +70,7 @@ centerFocusedColumn = "never"
 columnWidthPresets = [0.3333333333333333, 0.5, 0.66]
 infiniteLoop = false
 maxVisibleColumns = 2
-maxWindowsPerColumn = 3
+maxWindowsPerColumn = 2
 singleWindowAspectRatio = "4:3"
 
 [quakeTerminal]
@@ -103,7 +102,7 @@ hideEmptyWorkspaces = false
 labelFontSize = 12.0
 notchAware = true
 position = "overlappingMenuBar"
-reserveLayoutSpace = false
+reserveLayoutSpace = true
 showFloatingWindows = false
 showLabels = true
 windowLevel = "popup"
@@ -219,6 +218,20 @@ layout = "tile"
 assignToWorkspace = "4"
 bundleId = "com.apple.Safari.WebApp.0D9C8DEE-AE1A-4EB0-B84A-14BA4A046CDC"
 id = "B7681591-976F-4941-B08A-5DBB52A764A7"
+layout = "tile"
+
+[[appRules]]
+assignToWorkspace = "3"
+bundleId = "com.github.GitHubClient"
+id = "432CC75F-C644-4DAC-89DD-A933573D432D"
+layout = "tile"
+
+[[appRules]]
+assignToWorkspace = "3"
+axRole = "AXWindow"
+axSubrole = "AXStandardWindow"
+bundleId = "com.sourcegit-scm.sourcegit"
+id = "03A58F6F-B779-4DEE-8F6C-FB2216A7C1FF"
 layout = "tile"
 
 [[hotkeys]]
@@ -402,7 +415,7 @@ binding = "Control+Shift+Right Arrow"
 id = "move.right"
 
 [[hotkeys]]
-binding = "Control+Command+Tab"
+binding = "Option+Command+Tab"
 id = "focusMonitorNext"
 
 [[hotkeys]]
@@ -607,6 +620,12 @@ id = "toggleWorkspaceLayout"
 [[hotkeys]]
 binding = "Control+Up Arrow"
 id = "toggleOverview"
+
+[[monitorBarOverrides]]
+id = "E85AE3EF-FD20-40AB-A2FE-5A11A3C42A6C"
+monitorDisplayId = 5
+monitorName = "SAMSUNG"
+reserveLayoutSpace = false
 
 [[monitorOrientationOverrides]]
 monitorDisplayId = 5
