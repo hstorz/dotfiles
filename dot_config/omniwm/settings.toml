@@ -64,6 +64,10 @@ name = "SAMSUNG"
 displayId = 1
 name = "Built-in Retina Display"
 
+[[mouseWarp.monitorOrder]]
+displayId = 10
+name = ""
+
 [niri]
 alwaysCenterSingleColumn = true
 centerFocusedColumn = "never"
@@ -122,10 +126,8 @@ green = -1.0
 red = -1.0
 
 [[appRules]]
-assignToWorkspace = "1"
 bundleId = "com.apple.finder"
 id = "7B969BE5-9022-4232-8879-F1A07B68BB2A"
-layout = "tile"
 
 [[appRules]]
 assignToWorkspace = "2"
@@ -164,22 +166,6 @@ id = "83553E2D-DD1D-4BB7-A5B3-0214A3E1C26F"
 layout = "tile"
 
 [[appRules]]
-assignToWorkspace = "4"
-bundleId = "com.apple.Safari"
-id = "F0302051-39EB-4241-80D4-AF56DED00360"
-
-[[appRules]]
-assignToWorkspace = "4"
-bundleId = "com.microsoft.edgemac"
-id = "D7B04F16-950E-4465-99F2-CF023ACFD2A3"
-
-[[appRules]]
-assignToWorkspace = "4"
-bundleId = "com.highcaffeinecontent.radio"
-id = "39FECBC7-5406-4132-BC65-7F9AD1859F5B"
-layout = "tile"
-
-[[appRules]]
 assignToWorkspace = "3"
 bundleId = "ai.opencode.desktop"
 id = "E05D741C-2FE5-4B0F-91D7-4272E78B5FE1"
@@ -187,15 +173,8 @@ layout = "tile"
 
 [[appRules]]
 assignToWorkspace = "4"
-bundleId = "com.brave.Browser"
-id = "1C8C13B4-02C9-4582-B686-97736AC3A039"
-layout = "tile"
-
-[[appRules]]
-assignToWorkspace = "4"
 bundleId = "com.microsoft.teams2"
 id = "902F864D-DBAD-4F79-9BA5-0F4066D0FC05"
-layout = "tile"
 
 [[appRules]]
 assignToWorkspace = "3"
@@ -209,15 +188,22 @@ bundleId = "com.sourcegit-scm.sourcegit"
 id = "03A58F6F-B779-4DEE-8F6C-FB2216A7C1FF"
 
 [[appRules]]
-assignToWorkspace = "4"
+assignToWorkspace = "2"
 bundleId = "com.reactotron.app"
 id = "89DA6D53-F470-43CD-A5B5-08D14C110B53"
-layout = "tile"
+layout = "float"
 
 [[appRules]]
-assignToWorkspace = "4"
-bundleId = "com.google.Chrome.app.cifhbcnohmdccbgoicgdjpfamggdegmo"
-id = "19D25767-E2AA-454A-B49B-5872104AD5E1"
+assignToWorkspace = "2"
+axRole = "AXWindow"
+axSubrole = "AXStandardWindow"
+bundleId = "com.apple.iphonesimulator"
+id = "61C264CD-63AE-4161-94CB-503A0B985719"
+layout = "float"
+
+[[appRules]]
+bundleId = "com.apple.Safari"
+id = "CE1FDF74-B6F9-4BB5-8D22-185BEE1CF5C8"
 layout = "tile"
 
 [[hotkeys]]
@@ -253,11 +239,11 @@ binding = "Option+Shift+4"
 id = "moveToWorkspace.3"
 
 [[hotkeys]]
-binding = "Unassigned"
+binding = "Option+Command+5"
 id = "switchWorkspace.4"
 
 [[hotkeys]]
-binding = "Unassigned"
+binding = "Option+Shift+5"
 id = "moveToWorkspace.4"
 
 [[hotkeys]]
@@ -648,4 +634,12 @@ layoutType = "niri"
 name = "4"
 
 [workspaces.monitorAssignment]
-type = "secondary"
+type = "main"
+
+[[workspaces]]
+id = "17B1703D-6B9B-4A91-82FB-D1B224E60583"
+layoutType = "default"
+name = "5"
+
+[workspaces.monitorAssignment]
+type = "main"
