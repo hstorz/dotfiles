@@ -1,0 +1,9 @@
+{
+  "defaultProvider": "omlx",
+  "defaultModel": "gemma-4-12b-it-mlx-4-8bit",
+  "defaultThinkingLevel": "off",
+  "lastChangelogVersion": "0.78.0",
+  "packages": [
+    "npm:@zackify/pi-claude-permissions"
+  ]
+}
