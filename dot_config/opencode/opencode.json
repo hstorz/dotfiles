@@ -3,11 +3,14 @@
   "provider": {
     "llama.cpp": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "llama-server (remote)",
+      "name": "llama-server (local)",
       "options": {
-        "baseURL": "http://192.168.0.99:8080/v1"
+        "baseURL": "http://127.0.0.1:8080/v1"
       },
       "models": {
+        "google/gemma-4-12B-it-qat-q4_0-gguf:Q4_0": {
+          "name": "Gemma 4 12B Q4_0 (MTP)"
+        },
         "chachinggg/godot-gemma-4-e4b-it-GGUF:Q4_K_M": {
           "name": "Godot Gemma 4 E4B IT (Q4_K_M)"
         },
@@ -47,5 +50,5 @@
       }
     }
   },
-  "model": "llama.cpp/chachinggg/godot-gemma-4-e4b-it-GGUF:Q4_K_M"
+  "model": "llama.cpp/google/gemma-4-12B-it-qat-q4_0-gguf:Q4_0"
 }

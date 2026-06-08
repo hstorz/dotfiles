@@ -1,5 +1,31 @@
 {
   "providers": {
+    "llama.cpp": {
+      "baseUrl": "http://127.0.0.1:8080/v1",
+      "api": "openai-chat",
+      "apiKey": "dummy",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false,
+        "maxTokensField": "max_tokens"
+      },
+      "models": [
+        {
+          "id": "google/gemma-4-12B-it-qat-q4_0-gguf:Q4_0",
+          "name": "Gemma 4 12B Q4_0 (llama.cpp + MTP)",
+          "reasoning": false,
+          "input": ["text"],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 8192
+        }
+      ]
+    },
     "omlx": {
       "baseUrl": "http://127.0.0.1:8000/v1",
       "api": "openai-completions",
