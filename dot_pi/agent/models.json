@@ -1,7 +1,7 @@
 {
   "providers": {
     "llama.cpp": {
-      "baseUrl": "http://127.0.0.1:8080/v1",
+      "baseUrl": "http://192.168.0.99:8080/v1",
       "api": "openai-completions",
       "apiKey": "dummy",
       "compat": {
@@ -11,7 +11,7 @@
       },
       "models": [
         {
-          "id": "google/gemma-4-12B-it-qat-q4_0-gguf:Q4_0",
+          "id": "unsloth/gemma-4-12B-it-qat-GGUF:UD-Q4_K_XL",
           "name": "Gemma 4 12B Q4_0 (llama.cpp + MTP)",
           "reasoning": false,
           "input": ["text"],

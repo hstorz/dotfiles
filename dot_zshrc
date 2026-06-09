@@ -2,7 +2,6 @@ export PATH="$HOME/.devcontainers/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
 export HOMEBREW_NO_ENV_HINTS=1
 export EDITOR="code"
-export PATH="$HOME/.local/bin:$PATH" # used by Pi
 
 # Load .zsh completions
 fpath=(~/.zsh/completions $fpath)
@@ -38,3 +37,6 @@ test -f $HOME/.zsh/functions && source $HOME/.zsh/functions
 test -f $HOME/.zshrc.local && source $HOME/.zshrc.local
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
+
+# Pi
+export PATH="$HOME/.local/bin:$PATH"
