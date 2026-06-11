@@ -10,9 +10,6 @@
       "models": {
         "google/gemma-4-12B-it-qat-q4_0-gguf:Q4_0": {
           "name": "Gemma 4 12B Q4_0 (MTP)",
-          "temperature": 0.8,
-          "topP": 0.90,
-          "topK": 50,
           "maxTokens": 4096,
           "frequencyPenalty": 0.3,
           "presencePenalty": 0.15
