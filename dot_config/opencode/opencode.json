@@ -9,7 +9,13 @@
       },
       "models": {
         "google/gemma-4-12B-it-qat-q4_0-gguf:Q4_0": {
-          "name": "Gemma 4 12B Q4_0 (MTP)"
+          "name": "Gemma 4 12B Q4_0 (MTP)",
+          "temperature": 0.8,
+          "topP": 0.90,
+          "topK": 50,
+          "maxTokens": 4096,
+          "frequencyPenalty": 0.3,
+          "presencePenalty": 0.15
         },
         "chachinggg/godot-gemma-4-e4b-it-GGUF:Q4_K_M": {
           "name": "Godot Gemma 4 E4B IT (Q4_K_M)"
